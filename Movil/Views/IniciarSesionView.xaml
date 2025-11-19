@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Movil.ViewModels"
+             x:Class="Movil.Views.IniciarSesionView"
+             Title="Iniciar sesión"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.BindingContext>
+        <viewModels:IniciarSesionViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18">
+            <Label Text="Tienda Hogar"
+                   Style="{StaticResource Headline}"
+                   FontSize="32"
+                   FontAttributes="Bold" />
+
+            <Frame Padding="16" CornerRadius="12" HasShadow="True">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*" ColumnSpacing="12" RowSpacing="14">
+                    <Label Text="Email:" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
+                    <Entry Grid.Row="0" Grid.Column="1"
+                           Text="{Binding Mail}"
+                           Keyboard="Email"
+                           Placeholder="tu@email.com" />
+
+                    <Label Text="Contraseña:" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
+                    <Entry Grid.Row="1" Grid.Column="1"
+                           Text="{Binding Password}"
+                           IsPassword="True"
+                           Placeholder="********" />
+
+                    <CheckBox Grid.Row="2" Grid.Column="0"
+                              IsChecked="{Binding RecordarContrasena}" />
+                    <Label Text="Recordar contraseña" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" />
+
+                    <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                            Text="Iniciar sesión"
+                            Command="{Binding IniciarSesionCommand}" />
+                </Grid>
+            </Frame>
+
+            <Button Text="Crear cuenta nueva"
+                    Command="{Binding RegistrarseCommand}"
+                    BackgroundColor="#7B68EE"
+                    TextColor="{StaticResource PrimaryDarkText}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Movil.ViewModels"
+             x:Class="Movil.Views.ProductosView"
+             Title="Productos"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.BindingContext>
+        <viewModels:ProductosViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Spacing="10" Padding="16">
+        <SearchBar Placeholder="Buscar por nombre o descripción..."
+                   Text="{Binding FilterProducts}"
+                   SearchCommand="{Binding FiltrarProductosCommand}" />
+
+        <RefreshView IsRefreshing="{Binding IsRefreshing}"
+                     Command="{Binding ObtenerProductosCommand}">
+            <CollectionView ItemsSource="{Binding Productos}"
+                            SelectionMode="Single"
+                            SelectedItem="{Binding SelectedProduct}">
+                <CollectionView.EmptyView>
+                    <Label Text="Cargando productos..."
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <!-- Item con fondo transparente y borde ligero -->
+                        <Border Padding="12" Margin="0,6" BackgroundColor="Transparent">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="8" />
+                            </Border.StrokeShape>
+                            <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto">
+                                <!-- Fila de título y badge oferta al lado del nombre -->
+                                <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Spacing="8">
+                                    <Label Text="{Binding Nombre}"
+                                           FontAttributes="Bold" />
+                                    <Border BackgroundColor="#DC143C"
+                                            StrokeThickness="0"
+                                            Padding="6,1"
+                                            VerticalOptions="Center"
+                                            IsVisible="{Binding Oferta}">
+                                        <Label Text="OFERTA"
+                                               FontSize="9"
+                                               TextColor="White"
+                                               FontAttributes="Bold" />
+                                    </Border>
+                                </HorizontalStackLayout>
+
+                                <Label Grid.Row="0" Grid.Column="1"
+                                       Text="{Binding Precio, StringFormat='${0:F2}'}"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="Center" />
+
+                                <Label Grid.Row="1" Grid.Column="0"
+                                       Text="{Binding Descripcion}"
+                                       FontSize="12"
+                                       TextColor="{StaticResource Gray500}" />
+                                <Label Grid.Row="1" Grid.Column="1"
+                                       Text="{Binding Categoria.Nombre}"
+                                       FontSize="12"
+                                       HorizontalOptions="End"
+                                       TextColor="{StaticResource Gray400}" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+            <Button Text="Agregar"
+                    Command="{Binding AgregarProductoCommand}" />
+            <Button Text="Editar"
+                    Command="{Binding EditarProductoCommand}" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

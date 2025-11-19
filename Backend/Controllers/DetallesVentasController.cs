@@ -1,0 +1,118 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Backend.DataContext;
+using Service.Models;
+
+namespace Backend.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class DetallesVentasController : ControllerBase
+    {
+        private readonly TiendaContext _context;
+
+        public DetallesVentasController(TiendaContext context)
+        {
+            _context = context;
+        }
+
+        // GET: api/DetallesVentas?filtro=valor
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<DetalleVenta>>> GetDetallesVentas([FromQuery] string? filtro)
+        {
+            var query = _context.DetallesVenta
+                .Include(d => d.Producto)
+                .Include(d => d.Venta)
+                .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(filtro))
+            {
+                query = query.Where(d => d.Producto != null && d.Producto.Nombre.Contains(filtro));
+            }
+
+            return await query.ToListAsync();
+        }
+
+        // GET: api/DetalleVentas/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<DetalleVenta>> GetDetalleVenta(int id)
+        {
+            var detalleVenta = await _context.DetallesVenta.FindAsync(id);
+
+            if (detalleVenta == null)
+            {
+                return NotFound();
+            }
+
+            return detalleVenta;
+        }
+
+        // PUT: api/DetalleVentas/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutDetalleVenta(int id, DetalleVenta detalleVenta)
+        {
+            if (id != detalleVenta.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(detalleVenta).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!DetalleVentaExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // POST: api/DetalleVentas
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<ActionResult<DetalleVenta>> PostDetalleVenta(DetalleVenta detalleVenta)
+        {
+            _context.DetallesVenta.Add(detalleVenta);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetDetalleVenta", new { id = detalleVenta.Id }, detalleVenta);
+        }
+
+        // DELETE: api/DetalleVentas/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteDetalleVenta(int id)
+        {
+            var detalleVenta = await _context.DetallesVenta.FindAsync(id);
+            if (detalleVenta == null)
+            {
+                return NotFound();
+            }
+
+            _context.DetallesVenta.Remove(detalleVenta);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool DetalleVentaExists(int id)
+        {
+            return _context.DetallesVenta.Any(e => e.Id == id);
+        }
+    }
+}

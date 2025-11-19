@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Movil</name>
+    </assembly>
+    <members>
+        <member name="T:Movil.ViewModels.IniciarSesionViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Movil.ViewModels.IniciarSesionViewModel.Mail">
+            <inheritdoc cref="F:Movil.ViewModels.IniciarSesionViewModel.mail"/>
+        </member>
+        <member name="P:Movil.ViewModels.IniciarSesionViewModel.Password">
+            <inheritdoc cref="F:Movil.ViewModels.IniciarSesionViewModel.password"/>
+        </member>
+        <member name="P:Movil.ViewModels.IniciarSesionViewModel.RecordarContrasena">
+            <inheritdoc cref="F:Movil.ViewModels.IniciarSesionViewModel.recordarContrasena"/>
+        </member>
+        <member name="T:Movil.ViewModels.RegistrarseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Movil.ViewModels.RegistrarseViewModel.Nombre">
+            <inheritdoc cref="F:Movil.ViewModels.RegistrarseViewModel.nombre"/>
+        </member>
+        <member name="P:Movil.ViewModels.RegistrarseViewModel.Mail">
+            <inheritdoc cref="F:Movil.ViewModels.RegistrarseViewModel.mail"/>
+        </member>
+        <member name="P:Movil.ViewModels.RegistrarseViewModel.Password">
+            <inheritdoc cref="F:Movil.ViewModels.RegistrarseViewModel.password"/>
+        </member>
+        <member name="P:Movil.ViewModels.RegistrarseViewModel.VerifyPassword">
+            <inheritdoc cref="F:Movil.ViewModels.RegistrarseViewModel.verifyPassword"/>
+        </member>
+        <member name="T:Movil.ViewModels.TiendaShellViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Movil.ViewModels.TiendaShellViewModel.IsUserLogout">
+            <inheritdoc cref="F:Movil.ViewModels.TiendaShellViewModel.isUserLogout"/>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Mail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Mail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RecordarContrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RecordarContrasena" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.VerifyPassword">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "VerifyPassword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsUserLogout">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsUserLogout" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Mail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Mail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RecordarContrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RecordarContrasena" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.VerifyPassword">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "VerifyPassword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsUserLogout">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsUserLogout" generated properties.</summary>
+        </member>
+    </members>
+</doc>

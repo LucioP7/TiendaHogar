@@ -1,0 +1,1 @@
+C:\Users\alera\source\repos\TiendaHogar\Movil\Movil.csproj;x64

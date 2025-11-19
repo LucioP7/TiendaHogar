@@ -1,0 +1,13 @@
+C:\Users\alera\source\repos\TiendaHogar\Service\bin\Debug\net8.0\Service.deps.json
+C:\Users\alera\source\repos\TiendaHogar\Service\bin\Debug\net8.0\Service.dll
+C:\Users\alera\source\repos\TiendaHogar\Service\bin\Debug\net8.0\Service.pdb
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\Service.Properties.Resources.resources
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\Service.csproj.GenerateResource.cache
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\Service.dll
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\refint\Service.dll
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\Service.pdb
+C:\Users\alera\source\repos\TiendaHogar\Service\obj\Debug\net8.0\ref\Service.dll

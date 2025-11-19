@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Movil.ViewModels"
+             x:Class="Movil.Views.AddEditProductoView"
+             Title="Agregar/Editar Producto"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.BindingContext>
+        <viewModels:AddEditProductoViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+            <Label Text="Gestión de Producto"
+                   FontSize="24"
+                   FontAttributes="Bold" />
+
+            <Entry Placeholder="Nombre"
+                   Text="{Binding Nombre}" />
+
+            <Editor Placeholder="Descripción"
+                    AutoSize="TextChanges"
+                    Text="{Binding Descripcion}" />
+
+            <Entry Placeholder="URL Imagen (opcional)"
+                   Text="{Binding Imagen}" />
+
+            <Entry Placeholder="Precio"
+                   Keyboard="Numeric"
+                   Text="{Binding PrecioTexto}" />
+
+            <HorizontalStackLayout>
+                <Label Text="Oferta:" VerticalOptions="Center" />
+                <Switch IsToggled="{Binding Oferta}" />
+            </HorizontalStackLayout>
+
+            <Picker Title="Categoría"
+                    ItemsSource="{Binding Categorias}"
+                    ItemDisplayBinding="{Binding Nombre}"
+                    SelectedItem="{Binding SelectedCategoria}" />
+
+            <Picker Title="Marca"
+                    ItemsSource="{Binding Marcas}"
+                    ItemDisplayBinding="{Binding Nombre}"
+                    SelectedItem="{Binding SelectedMarca}" />
+
+            <Picker Title="Proveedor"
+                    ItemsSource="{Binding Proveedores}"
+                    ItemDisplayBinding="{Binding Nombre}"
+                    SelectedItem="{Binding SelectedProveedor}" />
+
+            <Button Text="Guardar"
+                    Command="{Binding SaveProductCommand}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

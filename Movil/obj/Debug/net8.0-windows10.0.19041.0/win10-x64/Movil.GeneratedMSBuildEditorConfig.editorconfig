@@ -1,0 +1,100 @@
+is_global = true
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = true
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Movil
+build_property.ProjectDir = C:\Users\alera\source\repos\TiendaHogar\Movil\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/ContentViews/FlyoutFooter.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.ContentViews.FlyoutFooter.xaml
+build_metadata.AdditionalFiles.TargetPath = ContentViews\FlyoutFooter.xaml
+build_metadata.AdditionalFiles.RelativePath = ContentViews\FlyoutFooter.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/ContentViews/FlyoutHeader.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.ContentViews.FlyoutHeader.xaml
+build_metadata.AdditionalFiles.TargetPath = ContentViews\FlyoutHeader.xaml
+build_metadata.AdditionalFiles.RelativePath = ContentViews\FlyoutHeader.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/TiendaShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.TiendaShell.xaml
+build_metadata.AdditionalFiles.TargetPath = TiendaShell.xaml
+build_metadata.AdditionalFiles.RelativePath = TiendaShell.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/Views/AddEditProductoView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.Views.AddEditProductoView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddEditProductoView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddEditProductoView.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/Views/IniciarSesionView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.Views.IniciarSesionView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\IniciarSesionView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\IniciarSesionView.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/Views/ProductosEnOfertaView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.Views.ProductosEnOfertaView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductosEnOfertaView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductosEnOfertaView.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/Views/ProductosView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.Views.ProductosView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductosView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductosView.xaml
+
+[C:/Users/alera/source/repos/TiendaHogar/Movil/Views/RegistrarseView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movil.Views.RegistrarseView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegistrarseView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegistrarseView.xaml

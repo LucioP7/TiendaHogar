@@ -1,0 +1,196 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1695AECD-8D8F-4A93-9EDA-90A20A23FF5D}|Movil\\Movil.csproj|c:\\users\\alera\\source\\repos\\tiendahogar\\movil\\views\\addeditproductoview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1695AECD-8D8F-4A93-9EDA-90A20A23FF5D}|Movil\\Movil.csproj|solutionrelative:movil\\views\\addeditproductoview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1695AECD-8D8F-4A93-9EDA-90A20A23FF5D}|Movil\\Movil.csproj|c:\\users\\alera\\source\\repos\\tiendahogar\\movil\\viewmodels\\addeditproductoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1695AECD-8D8F-4A93-9EDA-90A20A23FF5D}|Movil\\Movil.csproj|solutionrelative:movil\\viewmodels\\addeditproductoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02E86239-35EF-48B8-BC0C-13363E5A1248}|Service\\Service.csproj|c:\\users\\alera\\source\\repos\\tiendahogar\\service\\models\\localidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02E86239-35EF-48B8-BC0C-13363E5A1248}|Service\\Service.csproj|solutionrelative:service\\models\\localidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C57E8B63-F523-4390-9CEF-8ABAA4C07D22}|Backend\\Backend.csproj|c:\\users\\alera\\source\\repos\\tiendahogar\\backend\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C57E8B63-F523-4390-9CEF-8ABAA4C07D22}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C57E8B63-F523-4390-9CEF-8ABAA4C07D22}|Backend\\Backend.csproj|c:\\users\\alera\\source\\repos\\tiendahogar\\backend\\controllers\\localidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C57E8B63-F523-4390-9CEF-8ABAA4C07D22}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\localidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02E86239-35EF-48B8-BC0C-13363E5A1248}|Service\\Service.csproj|c:\\users\\alera\\source\\repos\\tiendahogar\\service\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02E86239-35EF-48B8-BC0C-13363E5A1248}|Service\\Service.csproj|solutionrelative:service\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02E86239-35EF-48B8-BC0C-13363E5A1248}|Service\\Service.csproj|c:\\users\\alera\\source\\repos\\tiendahogar\\service\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02E86239-35EF-48B8-BC0C-13363E5A1248}|Service\\Service.csproj|solutionrelative:service\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C57E8B63-F523-4390-9CEF-8ABAA4C07D22}|Backend\\Backend.csproj|c:\\users\\alera\\source\\repos\\tiendahogar\\backend\\datacontext\\tiendacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C57E8B63-F523-4390-9CEF-8ABAA4C07D22}|Backend\\Backend.csproj|solutionrelative:backend\\datacontext\\tiendacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddEditProductoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Movil\\ViewModels\\AddEditProductoViewModel.cs",
+              "RelativeDocumentMoniker": "Movil\\ViewModels\\AddEditProductoViewModel.cs",
+              "ToolTip": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Movil\\ViewModels\\AddEditProductoViewModel.cs",
+              "RelativeToolTip": "Movil\\ViewModels\\AddEditProductoViewModel.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:43:58.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEditProductoView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Movil\\Views\\AddEditProductoView.xaml.cs",
+              "RelativeDocumentMoniker": "Movil\\Views\\AddEditProductoView.xaml.cs",
+              "ToolTip": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Movil\\Views\\AddEditProductoView.xaml.cs",
+              "RelativeToolTip": "Movil\\Views\\AddEditProductoView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:42:23.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocalidadesController.cs",
+              "DocumentMoniker": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Backend\\Controllers\\LocalidadesController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\LocalidadesController.cs",
+              "ToolTip": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Backend\\Controllers\\LocalidadesController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\LocalidadesController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwBwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:36:54.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Backend\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Backend\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:36:34.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Localidad.cs",
+              "DocumentMoniker": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Service\\Models\\Localidad.cs",
+              "RelativeDocumentMoniker": "Service\\Models\\Localidad.cs",
+              "ToolTip": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Service\\Models\\Localidad.cs",
+              "RelativeToolTip": "Service\\Models\\Localidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:27:22.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Service\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Service\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Service\\Models\\Cliente.cs",
+              "RelativeToolTip": "Service\\Models\\Cliente.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:27:15.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Service\\Models\\Proveedor.cs",
+              "RelativeDocumentMoniker": "Service\\Models\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Service\\Models\\Proveedor.cs",
+              "RelativeToolTip": "Service\\Models\\Proveedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:27:09.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TiendaContext.cs",
+              "DocumentMoniker": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Backend\\DataContext\\TiendaContext.cs",
+              "RelativeDocumentMoniker": "Backend\\DataContext\\TiendaContext.cs",
+              "ToolTip": "C:\\Users\\alera\\source\\repos\\TiendaHogar\\Backend\\DataContext\\TiendaContext.cs",
+              "RelativeToolTip": "Backend\\DataContext\\TiendaContext.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAIwLkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:24:18.662Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
