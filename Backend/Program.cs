@@ -33,7 +33,8 @@ builder.Services.AddCors(options =>
         policy => policy
             .WithOrigins("https://tiendahogarebackend.azurewebsites.net",
                          "https://localhost:7000",
-                         "https://localhost:8000")
+                         "https://localhost:8000",
+                         "https://tiendahogarfrontend.azurewebsites.net")
             .AllowAnyHeader()
             .AllowAnyMethod());
 });
