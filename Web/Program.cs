@@ -4,6 +4,7 @@ using Service.Interfaces;
 using Service.Services;
 using Service.Models;
 using Web.Services;
+using Microsoft.JSInterop;
 using CurrieTechnologies.Razor.SweetAlert2;
 using Web;
 

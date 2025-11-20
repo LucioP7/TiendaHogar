@@ -1057,8 +1057,8 @@ C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\Web.dll
 C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\refint\Web.dll
 C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\Web.pdb
 C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\ref\Web.dll
-C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\qu62ebm7vs-4absg6b9bw.gz
-C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\z5f3flcg8p-wr4q1pqmy1.gz
-C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\5oas59qukp-h6l8lvewim.gz
-C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\j0qvopdxkj-8ff5txg3iw.gz
-C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\roury21wbo-ndgzvlkrpb.gz
+C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\5oas59qukp-mw0mt0ampb.gz
+C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\j0qvopdxkj-idsa3bi41o.gz
+C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\qu62ebm7vs-mc3rpyx5x3.gz
+C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\z5f3flcg8p-m6y323ym7s.gz
+C:\Users\alera\source\repos\TiendaHogar\Web\obj\Debug\net8.0\compressed\roury21wbo-8yxioj4xn7.gz

@@ -15,8 +15,9 @@ namespace Service.Services
         {
             client = new HttpClient();
             options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
-
+            
             string urlApi = Properties.Resources.UrlApi;
+
             if (Properties.Resources.Remoto == "false")
                 urlApi = Properties.Resources.UrlApiLocal;
 

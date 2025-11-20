@@ -104,7 +104,9 @@ namespace Backend.Controllers
                 return NotFound();
             }
 
-            _context.Localidades.Remove(localidad);
+            // Soft delete en lugar de eliminación física
+            localidad.Eliminado = true;
+            _context.Update(localidad);
             await _context.SaveChangesAsync();
 
             return NoContent();

@@ -49,26 +49,32 @@ else
     {
         localidades = await LocalidadService.GetAllAsync(string.Empty);
         logger.LogInformation($"Localidades obtenidas {localidades?.Count}");
-        
     }
-    
-    
-    private async void Eliminar(Localidad localidad)
+
+    private async Task Eliminar(Localidad localidad)
     {
         SweetAlertResult respuesta = await SweetAlert.FireAsync(new SweetAlertOptions
-            {
-                Title = "Borrando Localiad",
-                Text = $"¿Está seguro que desea borrar a la localidad {localidad.Nombre}",
-                Icon = SweetAlertIcon.Warning,
-                ShowCancelButton = true,
-                ConfirmButtonText = "Si, quiero borrarlo!",
-                CancelButtonText = "No, espera"
-            });
+        {
+            Title = "Borrando Localidad",
+            Text = $"¿Está seguro que desea borrar la localidad {localidad.Nombre}?",
+            Icon = SweetAlertIcon.Warning,
+            ShowCancelButton = true,
+            ConfirmButtonText = "Sí, borrarla",
+            CancelButtonText = "No, cancelar"
+        });
+
         if (respuesta.IsConfirmed)
         {
-            logger.LogInformation($"Borrando localidad {localidad.Nombre}");
-            await LocalidadService.DeleteAsync(localidad.Id);
-            localidades = await LocalidadService.GetAllAsync(string.Empty);
+            try
+            {
+                logger.LogInformation($"Borrando localidad {localidad.Nombre}");
+                await LocalidadService.DeleteAsync(localidad.Id);
+                localidades = await LocalidadService.GetAllAsync(string.Empty);
+            }
+            catch (Exception ex)
+            {
+                await SweetAlert.FireAsync("Error", $"No se pudo borrar: {ex.Message}", SweetAlertIcon.Error);
+            }
             StateHasChanged();
         }
     }
