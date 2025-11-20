@@ -1,0 +1,41 @@
+﻿@page "/"
+@inject FirebaseAuthService AuthService
+
+<HeaderPage TitlePage="Inicio" />
+
+@if (!isAuthenticated)
+{
+    <h2>Bienvenido a Tienda Hogar</h2>
+    <p>Encuentra productos para tu hogar: organización, limpieza, cocina y más. Explora las categorías y gestiona tus datos fácilmente.</p>
+    <p>Inicia sesión para acceder a la administración de productos, clientes y más.</p>
+}
+else
+{
+    <h2>Bienvenido @displayName a Tienda Hogar</h2>
+    <p>Administra tu inventario, marcas, categorías y proveedores desde el menú lateral. ¡Gracias por ser parte de Tienda Hogar!</p>
+}
+
+@code {
+    private bool isAuthenticated;
+    private string displayName = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        isAuthenticated = await AuthService.IsUserAuthenticated();
+        if (isAuthenticated)
+        {
+            displayName = await AuthService.GetDisplayName();
+        }
+        AuthService.OnChangeLogin += ActualizarEstado;
+    }
+
+    private async void ActualizarEstado()
+    {
+        isAuthenticated = await AuthService.IsUserAuthenticated();
+        if (isAuthenticated)
+        {
+            displayName = await AuthService.GetDisplayName();
+        }
+        StateHasChanged();
+    }
+}

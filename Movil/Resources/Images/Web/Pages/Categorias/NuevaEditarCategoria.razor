@@ -1,0 +1,66 @@
+@page "/nuevaeditarcategoria"
+@inject IGenericService<Categoria> CategoriaService
+@inject NavigationManager NavigationManager
+@inject SweetAlertService SweetAlert
+
+<HeaderPage TitlePage="Categoría" />
+
+@if (categoria == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else
+{
+    <EditForm Model="categoria" OnValidSubmit="Guardar">
+        <DataAnnotationsValidator />
+        <div class="form-group mb-2">
+            <label for="Nombre">Nombre:</label>
+            <InputText id="Nombre" class="form-control" @bind-Value="categoria.Nombre" />
+        </div>
+        <div class="form-group mb-2">
+            <label for="Descripcion">Descripción:</label>
+            <InputText id="Descripcion" class="form-control" @bind-Value="categoria.Descripcion" />
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <ValidationSummary />
+    </EditForm>
+}
+
+@code {
+    [SupplyParameterFromQuery]
+    [Parameter]
+    public int IdCategoriaEditada { get; set; }
+
+    private Categoria? categoria;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (IdCategoriaEditada != 0)
+        {
+            categoria = await CategoriaService.GetByIdAsync(IdCategoriaEditada) ?? new Categoria();
+        }
+        else
+        {
+            categoria = new Categoria();
+        }
+    }
+
+    private async Task Guardar()
+    {
+        if (string.IsNullOrWhiteSpace(categoria!.Nombre))
+        {
+            await SweetAlert.FireAsync("Error", "El nombre es obligatorio", SweetAlertIcon.Error);
+            return;
+        }
+
+        if (IdCategoriaEditada == 0)
+        {
+            await CategoriaService.AddAsync(categoria);
+        }
+        else
+        {
+            await CategoriaService.UpdateAsync(categoria);
+        }
+        NavigationManager.NavigateTo("/categorias");
+    }
+}

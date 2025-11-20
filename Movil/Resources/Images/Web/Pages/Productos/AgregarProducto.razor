@@ -1,0 +1,116 @@
+﻿@page "/agregarproducto"
+@inject IGenericService<Producto> ProductoService
+@inject IGenericService<Categoria> CategoriaService
+@inject IGenericService<Marca> MarcaService
+@inject IGenericService<Proveedor> ProveedorService
+@inject NavigationManager NavigationManager
+
+<HeaderPage TitlePage="Agregando producto" />
+
+@if (producto == null || categorias == null || marcas == null || proveedores == null)
+{
+    <p><em>CARGANDO....</em></p>
+}
+else
+{
+    <EditForm Model="producto" OnValidSubmit="Guardar">
+        <DataAnnotationsValidator />
+
+        <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <InputText id="Nombre" class="form-control" @bind-Value="producto.Nombre" />
+        </div>
+        <div class="form-group">
+            <label for="Descripcion">Descripción</label>
+            <InputText id="Descripcion" class="form-control" @bind-Value="producto.Descripcion" />
+        </div>
+        <div class="form-group">
+            <label for="Precio">Precio</label>
+            <InputNumber id="Precio" class="form-control" @bind-Value="producto.Precio" />
+        </div>
+        <div class="form-group">
+            <label for="Oferta">Oferta</label>
+            <InputCheckbox id="Oferta" class="form-check-input" @bind-Value="producto.Oferta" />
+        </div>
+        <div class="form-group">
+            <label for="Categoria">Categoría</label>
+            <InputSelect id="Categoria" class="form-control" @bind-Value="producto.CategoriaId">
+                <option value="">-- Seleccione --</option>
+                @foreach (var c in categorias)
+                {
+                    <option value="@c.Id">@c.Nombre</option>
+                }
+            </InputSelect>
+        </div>
+        <div class="form-group">
+            <label for="Marca">Marca</label>
+            <InputSelect id="Marca" class="form-control" @bind-Value="producto.MarcaId">
+                <option value="">-- Seleccione --</option>
+                @foreach (var m in marcas)
+                {
+                    <option value="@m.Id">@m.Nombre</option>
+                }
+            </InputSelect>
+        </div>
+        <div class="form-group">
+            <label for="Proveedor">Proveedor</label>
+            <InputSelect id="Proveedor" class="form-control" @bind-Value="producto.ProveedorId">
+                <option value="">-- Seleccione --</option>
+                @foreach (var p in proveedores)
+                {
+                    <option value="@p.Id">@p.Nombre</option>
+                }
+            </InputSelect>
+        </div>
+        <div class="form-group">
+            <label for="Imagen">Imagen (URL)</label>
+            <InputText id="Imagen" class="form-control" @bind-Value="producto.Imagen" />
+            @if(!string.IsNullOrWhiteSpace(producto.Imagen))
+            {
+                <img class="card-img mb-2" src="@producto.Imagen" />
+            }
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <ValidationSummary />
+    </EditForm>
+}
+@code {
+    [SupplyParameterFromQuery]
+    [Parameter]
+    public int? IdProductoAgregado { get; set; }
+
+    private Producto producto = new Producto();
+    private List<Categoria>? categorias;
+    private List<Marca>? marcas;
+    private List<Proveedor>? proveedores;
+
+    protected override async Task OnInitializedAsync()
+    {
+        categorias = await CategoriaService.GetAllAsync(string.Empty);
+        marcas = await MarcaService.GetAllAsync(string.Empty);
+        proveedores = await ProveedorService.GetAllAsync(string.Empty);
+
+        if (IdProductoAgregado.HasValue && IdProductoAgregado.Value != 0)
+        {
+            producto = await ProductoService.GetByIdAsync(IdProductoAgregado.Value);
+        }
+        else
+        {
+            producto = new Producto();
+        }
+    }
+
+    private async Task Guardar()
+    {
+        if (producto.Id == 0)
+        {
+            await ProductoService.AddAsync(producto);
+        }
+        else
+        {
+            await ProductoService.UpdateAsync(producto);
+        }
+        NavigationManager.NavigateTo("/productos");
+    }
+}
