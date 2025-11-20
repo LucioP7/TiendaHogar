@@ -14,7 +14,5 @@ namespace Service.Models
         public string Nombre { get; set; } = string.Empty;
         public string Descripcion { get; set; } = string.Empty;
         public bool Eliminado { get; set; } = false;
-
-        public ICollection<Producto> Productos { get; set; }
     }
 }

@@ -263,6 +263,13 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\macca
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.inputs
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\electronica.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\conveniente.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\rango.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\fondo.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\casa1.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oferta.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cerrar.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
@@ -276,6 +283,7 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\macca
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\photo.jpg
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\electrodomesticos.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
@@ -295,6 +303,7 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\macca
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Movil.AssemblyInfoInputs.cache
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Movil.AssemblyInfo.cs
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Movil.csproj.CoreCompileInputs.cache
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Movil.sourcelink.json
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\XamlC.stamp
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Movil.csproj.Up2Date
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Movil.dll
@@ -302,10 +311,3 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\macca
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Movil.pdb
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Movil.genruntimeconfig.cache
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\Movil.dll
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\electronica.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cerrar.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oferta.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\conveniente.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\electrodomesticos.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\rango.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\casa1.png

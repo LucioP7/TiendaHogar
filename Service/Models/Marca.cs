@@ -13,7 +13,6 @@ namespace Service.Models
         [Required(ErrorMessage = "El campo Nombre es obligatorio.")]
         public string Nombre { get; set; } = string.Empty;
         public bool Eliminado { get; set; } = false;
-        public ICollection<Producto> Productos { get; set; }
     }
 
 }

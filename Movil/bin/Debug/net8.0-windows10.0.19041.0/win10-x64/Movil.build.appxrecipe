@@ -214,6 +214,9 @@
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\electronica.scale-100.png">
       <PackagePath>electronica.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo.scale-100.png">
+      <PackagePath>fondo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\oferta.scale-100.png">
       <PackagePath>oferta.scale-100.png</PackagePath>
     </AppxPackagedFile>

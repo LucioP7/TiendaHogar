@@ -9,7 +9,7 @@
     xmlns:contentviews="clr-namespace:Movil.ContentViews"
     FlyoutBehavior="Disabled"
     Title="Movil"
-    FlyoutBackgroundImage="photo.jpg"
+    FlyoutBackgroundImage="fondo.png"
     FlyoutBackgroundImageAspect="AspectFill"
     FlyoutHeaderBehavior="CollapseOnScroll">
 

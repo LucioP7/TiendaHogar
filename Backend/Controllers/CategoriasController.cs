@@ -25,9 +25,7 @@ namespace Backend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategorias([FromQuery] string? filtro)
         {
-            var query = _context.Categorias
-                .Include(c => c.Productos)
-                .AsQueryable();
+            var query = _context.Categorias.AsQueryable(); // Quitado Include(c => c.Productos) porque Categoria ya no expone la colección
 
             if (!string.IsNullOrWhiteSpace(filtro))
             {
@@ -87,7 +85,6 @@ namespace Backend.Controllers
         [HttpPost]
         public async Task<ActionResult<Categoria>> PostCategoria(Categoria categoria)
         {
-            // No hay entidades relacionadas que adjuntar en Categoria
             _context.Categorias.Add(categoria);
             await _context.SaveChangesAsync();
 

@@ -31,7 +31,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins",
         policy => policy
-            .WithOrigins("https://backlucio.azurewebsites.net",
+            .WithOrigins("https://tiendahogarebackend.azurewebsites.net",
                          "https://localhost:7000",
                          "https://localhost:8000")
             .AllowAnyHeader()
@@ -49,10 +49,6 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowSpecificOrigins");
 
 app.UseHttpsRedirection();
-
-// Orden recomendado: primero autenticación, luego autorización
-app.UseAuthentication();
-app.UseAuthorization();
 
 app.MapControllers();
 

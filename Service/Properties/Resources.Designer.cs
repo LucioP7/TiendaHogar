@@ -61,7 +61,7 @@ namespace Service.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a false.
+        ///   Busca una cadena traducida similar a true.
         /// </summary>
         internal static string Remoto {
             get {
@@ -70,7 +70,7 @@ namespace Service.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a null.
+        ///   Busca una cadena traducida similar a https://tiendahogarebackend.azurewebsites.net/api/.
         /// </summary>
         internal static string UrlApi {
             get {

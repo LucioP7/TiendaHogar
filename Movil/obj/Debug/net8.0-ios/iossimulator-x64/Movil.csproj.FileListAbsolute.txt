@@ -242,16 +242,12 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libicuuc.a
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-debugger-static.a
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-debugger-stub-static.a
-C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-debugger.dylib
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing-static.a
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing-stub-static.a
-C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing.dylib
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-hot_reload-static.a
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-hot_reload-stub-static.a
-C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-hot_reload.dylib
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-marshal-ilgen-static.a
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-marshal-ilgen-stub-static.a
-C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmono-component-marshal-ilgen.dylib
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmonosgen-2.0.a
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\libmonosgen-2.0.dylib
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.iOS.registrar.a
@@ -321,3 +317,5 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\iossimulator-
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\electrodomesticos.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\oferta.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\cerrar.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\fondo.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\iossimulator-x64\Movil.sourcelink.json

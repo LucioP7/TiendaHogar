@@ -309,7 +309,7 @@ namespace Backend.Migrations
                         {
                             Id = 1,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 20, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5459),
+                            Fecha = new DateTime(2025, 10, 21, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(1994),
                             FormaDePago = 0,
                             Iva = 21,
                             ProveedorId = 1,
@@ -319,7 +319,7 @@ namespace Backend.Migrations
                         {
                             Id = 2,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 21, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5480),
+                            Fecha = new DateTime(2025, 10, 22, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2017),
                             FormaDePago = 1,
                             Iva = 21,
                             ProveedorId = 2,
@@ -329,7 +329,7 @@ namespace Backend.Migrations
                         {
                             Id = 3,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 22, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5482),
+                            Fecha = new DateTime(2025, 10, 23, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2020),
                             FormaDePago = 3,
                             Iva = 21,
                             ProveedorId = 3,
@@ -339,7 +339,7 @@ namespace Backend.Migrations
                         {
                             Id = 4,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 23, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5483),
+                            Fecha = new DateTime(2025, 10, 24, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2022),
                             FormaDePago = 0,
                             Iva = 21,
                             ProveedorId = 4,
@@ -349,7 +349,7 @@ namespace Backend.Migrations
                         {
                             Id = 5,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 24, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5485),
+                            Fecha = new DateTime(2025, 10, 25, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2024),
                             FormaDePago = 2,
                             Iva = 21,
                             ProveedorId = 5,
@@ -359,7 +359,7 @@ namespace Backend.Migrations
                         {
                             Id = 6,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 25, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5487),
+                            Fecha = new DateTime(2025, 10, 26, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2026),
                             FormaDePago = 3,
                             Iva = 21,
                             ProveedorId = 6,
@@ -369,7 +369,7 @@ namespace Backend.Migrations
                         {
                             Id = 7,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 26, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5488),
+                            Fecha = new DateTime(2025, 10, 27, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2071),
                             FormaDePago = 0,
                             Iva = 21,
                             ProveedorId = 7,
@@ -379,7 +379,7 @@ namespace Backend.Migrations
                         {
                             Id = 8,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 27, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5491),
+                            Fecha = new DateTime(2025, 10, 28, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2074),
                             FormaDePago = 1,
                             Iva = 21,
                             ProveedorId = 8,
@@ -389,7 +389,7 @@ namespace Backend.Migrations
                         {
                             Id = 9,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 28, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5493),
+                            Fecha = new DateTime(2025, 10, 29, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2075),
                             FormaDePago = 2,
                             Iva = 21,
                             ProveedorId = 9,
@@ -399,7 +399,7 @@ namespace Backend.Migrations
                         {
                             Id = 10,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 29, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5494),
+                            Fecha = new DateTime(2025, 10, 30, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2077),
                             FormaDePago = 0,
                             Iva = 21,
                             ProveedorId = 10,
@@ -1189,7 +1189,7 @@ namespace Backend.Migrations
                             Id = 1,
                             ClienteId = 1,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 30, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5529),
+                            Fecha = new DateTime(2025, 10, 31, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2120),
                             FormaPago = 0,
                             Iva = 21m,
                             Total = 120000m
@@ -1199,7 +1199,7 @@ namespace Backend.Migrations
                             Id = 2,
                             ClienteId = 2,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 10, 31, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5535),
+                            Fecha = new DateTime(2025, 11, 1, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2125),
                             FormaPago = 1,
                             Iva = 21m,
                             Total = 180000m
@@ -1209,7 +1209,7 @@ namespace Backend.Migrations
                             Id = 3,
                             ClienteId = 3,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 11, 1, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5537),
+                            Fecha = new DateTime(2025, 11, 2, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2128),
                             FormaPago = 3,
                             Iva = 21m,
                             Total = 1200m
@@ -1219,7 +1219,7 @@ namespace Backend.Migrations
                             Id = 4,
                             ClienteId = 4,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 11, 2, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5539),
+                            Fecha = new DateTime(2025, 11, 3, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2130),
                             FormaPago = 0,
                             Iva = 21m,
                             Total = 800m
@@ -1229,7 +1229,7 @@ namespace Backend.Migrations
                             Id = 5,
                             ClienteId = 5,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 11, 3, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5542),
+                            Fecha = new DateTime(2025, 11, 4, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2133),
                             FormaPago = 2,
                             Iva = 21m,
                             Total = 1500m
@@ -1239,7 +1239,7 @@ namespace Backend.Migrations
                             Id = 6,
                             ClienteId = 6,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 11, 4, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5544),
+                            Fecha = new DateTime(2025, 11, 5, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2136),
                             FormaPago = 3,
                             Iva = 21m,
                             Total = 3500m
@@ -1249,7 +1249,7 @@ namespace Backend.Migrations
                             Id = 7,
                             ClienteId = 7,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 11, 5, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5546),
+                            Fecha = new DateTime(2025, 11, 6, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2138),
                             FormaPago = 0,
                             Iva = 21m,
                             Total = 9000m
@@ -1259,7 +1259,7 @@ namespace Backend.Migrations
                             Id = 8,
                             ClienteId = 8,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 11, 6, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5548),
+                            Fecha = new DateTime(2025, 11, 7, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2140),
                             FormaPago = 1,
                             Iva = 21m,
                             Total = 2500m
@@ -1269,7 +1269,7 @@ namespace Backend.Migrations
                             Id = 9,
                             ClienteId = 9,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 11, 7, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5551),
+                            Fecha = new DateTime(2025, 11, 8, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2142),
                             FormaPago = 2,
                             Iva = 21m,
                             Total = 5000m
@@ -1279,7 +1279,7 @@ namespace Backend.Migrations
                             Id = 10,
                             ClienteId = 10,
                             Eliminado = false,
-                            Fecha = new DateTime(2025, 11, 8, 15, 37, 33, 918, DateTimeKind.Local).AddTicks(5553),
+                            Fecha = new DateTime(2025, 11, 9, 1, 38, 54, 95, DateTimeKind.Local).AddTicks(2144),
                             FormaPago = 0,
                             Iva = 21m,
                             Total = 7000m
@@ -1347,13 +1347,13 @@ namespace Backend.Migrations
             modelBuilder.Entity("Service.Models.Producto", b =>
                 {
                     b.HasOne("Service.Models.Categoria", "Categoria")
-                        .WithMany("Productos")
+                        .WithMany()
                         .HasForeignKey("CategoriaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Service.Models.Marca", "Marca")
-                        .WithMany("Productos")
+                        .WithMany()
                         .HasForeignKey("MarcaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1389,16 +1389,6 @@ namespace Backend.Migrations
                         .IsRequired();
 
                     b.Navigation("Cliente");
-                });
-
-            modelBuilder.Entity("Service.Models.Categoria", b =>
-                {
-                    b.Navigation("Productos");
-                });
-
-            modelBuilder.Entity("Service.Models.Marca", b =>
-                {
-                    b.Navigation("Productos");
                 });
 
             modelBuilder.Entity("Service.Models.Venta", b =>

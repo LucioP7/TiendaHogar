@@ -25,9 +25,7 @@ namespace Backend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Marca>>> GetMarcas([FromQuery] string? filtro)
         {
-            var query = _context.Marcas
-                .Include(m => m.Productos)
-                .AsQueryable();
+            var query = _context.Marcas.AsQueryable(); // Quitado Include(m => m.Productos) porque Marca ya no tiene navegación
 
             if (!string.IsNullOrWhiteSpace(filtro))
             {
@@ -87,7 +85,6 @@ namespace Backend.Controllers
         [HttpPost]
         public async Task<ActionResult<Marca>> PostMarca(Marca marca)
         {
-            // No hay entidades relacionadas que adjuntar en Marca
             _context.Marcas.Add(marca);
             await _context.SaveChangesAsync();
 

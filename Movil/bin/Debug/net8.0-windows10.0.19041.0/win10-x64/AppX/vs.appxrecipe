@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-11-19T18:51:20.550</Modified>
+      <Modified>2025-11-19T20:39:21.110</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-11-19T16:36:05.917</Modified>
+      <Modified>2025-11-19T20:29:26.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Movil.runtimeconfig.json">
       <PackagePath>Movil.runtimeconfig.json</PackagePath>
-      <Modified>2025-11-18T21:17:41.951</Modified>
+      <Modified>2025-11-19T20:24:24.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Movil.dll">
       <PackagePath>Movil.dll</PackagePath>
-      <Modified>2025-11-19T18:51:19.082</Modified>
+      <Modified>2025-11-19T20:39:20.577</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Movil.exe</PackagePath>
-      <Modified>2025-11-19T18:51:19.154</Modified>
+      <Modified>2025-11-19T20:39:20.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2025-11-18T21:17:39.493</Modified>
+      <Modified>2025-11-19T20:07:09.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2025-11-18T21:17:39.511</Modified>
+      <Modified>2025-11-19T20:07:09.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2025-11-18T21:17:39.534</Modified>
+      <Modified>2025-11-19T20:07:10.024</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-11-18T21:17:39.568</Modified>
+      <Modified>2025-11-19T20:07:10.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2025-11-18T21:17:39.699</Modified>
+      <Modified>2025-11-19T20:07:10.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -83,223 +83,227 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-11-19T16:35:22.461</Modified>
+      <Modified>2025-11-19T20:07:11.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.452</Modified>
+      <Modified>2025-11-19T20:07:11.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.452</Modified>
+      <Modified>2025-11-19T20:07:11.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.451</Modified>
+      <Modified>2025-11-19T20:07:11.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.451</Modified>
+      <Modified>2025-11-19T20:07:11.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.451</Modified>
+      <Modified>2025-11-19T20:07:11.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.458</Modified>
+      <Modified>2025-11-19T20:07:11.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.458</Modified>
+      <Modified>2025-11-19T20:07:11.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.457</Modified>
+      <Modified>2025-11-19T20:07:11.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.458</Modified>
+      <Modified>2025-11-19T20:07:11.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.458</Modified>
+      <Modified>2025-11-19T20:07:11.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.459</Modified>
+      <Modified>2025-11-19T20:07:11.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.459</Modified>
+      <Modified>2025-11-19T20:07:11.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.459</Modified>
+      <Modified>2025-11-19T20:07:11.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.459</Modified>
+      <Modified>2025-11-19T20:07:11.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.459</Modified>
+      <Modified>2025-11-19T20:07:11.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.461</Modified>
+      <Modified>2025-11-19T20:07:11.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.461</Modified>
+      <Modified>2025-11-19T20:07:11.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.461</Modified>
+      <Modified>2025-11-19T20:07:11.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.461</Modified>
+      <Modified>2025-11-19T20:07:11.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.460</Modified>
+      <Modified>2025-11-19T20:07:11.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.460</Modified>
+      <Modified>2025-11-19T20:07:11.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.460</Modified>
+      <Modified>2025-11-19T20:07:11.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.460</Modified>
+      <Modified>2025-11-19T20:07:11.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.460</Modified>
+      <Modified>2025-11-19T20:07:11.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.460</Modified>
+      <Modified>2025-11-19T20:07:11.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.454</Modified>
+      <Modified>2025-11-19T20:07:11.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.454</Modified>
+      <Modified>2025-11-19T20:07:11.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.454</Modified>
+      <Modified>2025-11-19T20:07:11.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.454</Modified>
+      <Modified>2025-11-19T20:07:11.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.453</Modified>
+      <Modified>2025-11-19T20:07:11.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.456</Modified>
+      <Modified>2025-11-19T20:07:11.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.456</Modified>
+      <Modified>2025-11-19T20:07:11.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.455</Modified>
+      <Modified>2025-11-19T20:07:11.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.455</Modified>
+      <Modified>2025-11-19T20:07:11.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.455</Modified>
+      <Modified>2025-11-19T20:07:11.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.457</Modified>
+      <Modified>2025-11-19T20:07:11.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.457</Modified>
+      <Modified>2025-11-19T20:07:11.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.457</Modified>
+      <Modified>2025-11-19T20:07:11.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.456</Modified>
+      <Modified>2025-11-19T20:07:11.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.456</Modified>
+      <Modified>2025-11-19T20:07:11.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.453</Modified>
+      <Modified>2025-11-19T20:07:11.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.453</Modified>
+      <Modified>2025-11-19T20:07:11.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.452</Modified>
+      <Modified>2025-11-19T20:07:11.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.452</Modified>
+      <Modified>2025-11-19T20:07:11.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.452</Modified>
+      <Modified>2025-11-19T20:07:11.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\casa1.scale-100.png">
       <PackagePath>casa1.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.462</Modified>
+      <Modified>2025-11-19T20:07:11.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cerrar.scale-100.png">
       <PackagePath>cerrar.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.462</Modified>
+      <Modified>2025-11-19T20:07:11.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\conveniente.scale-100.png">
       <PackagePath>conveniente.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.451</Modified>
+      <Modified>2025-11-19T20:07:11.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\electrodomesticos.scale-100.png">
       <PackagePath>electrodomesticos.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.451</Modified>
+      <Modified>2025-11-19T20:07:11.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\electronica.scale-100.png">
       <PackagePath>electronica.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.461</Modified>
+      <Modified>2025-11-19T20:07:11.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo.scale-100.png">
+      <PackagePath>fondo.scale-100.png</PackagePath>
+      <Modified>2025-11-19T20:07:11.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\oferta.scale-100.png">
       <PackagePath>oferta.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.450</Modified>
+      <Modified>2025-11-19T20:07:11.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\photo.scale-100.jpg">
       <PackagePath>photo.scale-100.jpg</PackagePath>
-      <Modified>2025-11-19T16:35:22.451</Modified>
+      <Modified>2025-11-19T20:07:11.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\rango.scale-100.png">
       <PackagePath>rango.scale-100.png</PackagePath>
-      <Modified>2025-11-19T16:35:22.462</Modified>
+      <Modified>2025-11-19T20:07:11.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Movil.deps.json">
       <PackagePath>Movil.deps.json</PackagePath>
-      <Modified>2025-11-18T21:17:41.930</Modified>
+      <Modified>2025-11-19T20:29:25.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -599,7 +603,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Service\bin\Debug\net8.0\Service.dll">
       <PackagePath>Service.dll</PackagePath>
-      <Modified>2025-11-19T18:42:33.307</Modified>
+      <Modified>2025-11-19T20:25:47.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

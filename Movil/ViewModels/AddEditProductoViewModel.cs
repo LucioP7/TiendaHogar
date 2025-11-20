@@ -230,6 +230,18 @@ namespace Movil.ViewModels
                     await productoService.AddAsync(nuevo);
                 }
 
+                nombre = string.Empty;
+                descripcion = string.Empty;
+                precio = 0;
+                precioTexto = string.Empty;
+                oferta = false;
+                imagen = string.Empty;
+                selectedCategoria = null;
+                selectedMarca = null;
+                selectedProveedor = null;
+                OnPropertyChanged(string.Empty);
+
+
                 await Shell.Current.GoToAsync("//nuestra_app/productos/ListaProductos");
             }
             catch (Exception ex)

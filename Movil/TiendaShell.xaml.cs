@@ -41,7 +41,7 @@ namespace Movil
 
             try
             {
-                _ = Shell.Current.GoToAsync("//nuestra_app/productos/ListaProductos");
+                _ = Shell.Current.GoToAsync("//nuestra_app/MainPage");
             }
             catch (Exception ex)
             {
