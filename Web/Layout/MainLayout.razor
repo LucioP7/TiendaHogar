@@ -1,16 +1,19 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
+<div class="page fade-in">
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <main>
         <div class="top-row px-4">
-            <a href="https://www.isp20.edu.ar" target="_blank">Instituto Nº20</a>
+            <a href="https://github.com/LucioP7" target="_blank" class="text-decoration-none">APROBADO POR MI</a>
         </div>
 
         <article class="content px-4">
-            @Body
+            <div class="page-card">
+                @Body
+            </div>
+            <div class="app-footer">&copy; @DateTime.Now.Year Tienda Hogar</div>
         </article>
     </main>
 </div>

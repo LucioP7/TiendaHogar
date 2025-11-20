@@ -2006,13 +2006,6 @@
           },
           "eliminado": {
             "type": "boolean"
-          },
-          "productos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Producto"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2238,13 +2231,6 @@
           },
           "eliminado": {
             "type": "boolean"
-          },
-          "productos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Producto"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false

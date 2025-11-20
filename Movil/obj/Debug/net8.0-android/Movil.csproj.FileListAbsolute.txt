@@ -177,7 +177,6 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\a
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Primitives.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Compatibility.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.dll
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.HotReload.Forms.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.pdb
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Xaml.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Xaml.pdb
@@ -189,9 +188,6 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\a
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.pdb
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.VisualBasic.Core.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.VisualBasic.dll
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Win32.Primitives.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.Win32.Registry.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Mono.Android.dll
@@ -297,7 +293,6 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\a
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\System.Numerics.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\System.Numerics.Vectors.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\System.ObjectModel.dll
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\System.Private.DataContractSerialization.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\System.Private.Uri.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\System.Private.Xml.dll

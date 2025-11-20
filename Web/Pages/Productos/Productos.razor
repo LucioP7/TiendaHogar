@@ -11,44 +11,49 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Marca</th>
-                <th>Categoría</th>
-                <th>Proveedor</th>
-                <th>Precio</th>
-                <th>Oferta</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var producto in productos)
-            {
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <button @onclick="AgregarProducto" class="btn btn-primary"><span class="me-1">➕</span>Agregar Producto</button>
+        <span class="badge-soft-primary">Total: @productos.Count</span>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
                 <tr>
-                    <td>@producto.Id</td>
-                    <td>@producto.Nombre</td>
-                    <td>@producto.Marca?.Nombre</td>
-                    <td>@producto.Categoria?.Nombre</td>
-                    <td>@producto.Proveedor?.Nombre</td>
-                    <td>@producto.Precio.ToString("N2")</td>
-                    <td>@(producto.Oferta ? "Sí" : "No")</td>
-                    <td>
-                        <a href="/editarproducto?IdProductoEditado=@producto.Id">Editar</a>
-                    </td>
-                    <td>
-                        <button title="Eliminar" @onclick="()=>ConfirmarEliminar(producto)" class="btn btn-danger">Eliminar</button>
-                    </td>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Categoría</th>
+                    <th>Proveedor</th>
+                    <th class="text-end">Precio</th>
+                    <th>Oferta</th>
+                    <th class="text-center" colspan="2">Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var producto in productos)
+                {
+                    <tr>
+                        <td>@producto.Id</td>
+                        <td>@producto.Nombre</td>
+                        <td>@producto.Marca?.Nombre</td>
+                        <td>@producto.Categoria?.Nombre</td>
+                        <td>@producto.Proveedor?.Nombre</td>
+                        <td class="text-end">@producto.Precio.ToString("N2")</td>
+                        <td>
+                            <span class="@(producto.Oferta ? "badge-soft-primary" : "text-muted")">@(producto.Oferta ? "Sí" : "No")</span>
+                        </td>
+                        <td class="text-center">
+                            <a class="action-link" href="/editarproducto?IdProductoEditado=@producto.Id">Editar</a>
+                        </td>
+                        <td class="text-center">
+                            <button title="Eliminar" @onclick="()=>ConfirmarEliminar(producto)" class="action-link action-link-danger border-0 bg-transparent">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
-
-<button @onclick="AgregarProducto" class="btn btn-primary">Agregar Producto</button>
 
 @code {
     private List<Producto>? productos;

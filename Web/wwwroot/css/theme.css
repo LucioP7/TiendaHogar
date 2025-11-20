@@ -1,0 +1,98 @@
+/* Tema moderno para Tienda Hogar - solo estilos visuales */
+:root {
+  --color-bg: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f0f3f7;
+  --color-border: #e2e8f0;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-active: #1e40af;
+  --color-danger: #dc2626;
+  --color-danger-hover: #b91c1c;
+  --color-accent: #9333ea;
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-gradient-start: #0f172a;
+  --color-gradient-end: #1e3a8a;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --transition-fast: .15s ease;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.08);
+  --shadow-lg: 0 10px 25px -5px rgba(0,0,0,.15);
+  --sidebar-width: 250px;
+}
+
+html, body { background: var(--color-bg); color: var(--color-text); }
+
+body { -webkit-font-smoothing: antialiased; }
+
+/* Enlaces */
+a { transition: color var(--transition-fast); }
+a:hover { color: var(--color-primary); }
+
+/* Botones */
+.btn { font-weight: 500; letter-spacing: .3px; transition: all var(--transition-fast); }
+.btn-primary { background: linear-gradient(135deg,var(--color-primary) 0%,var(--color-accent) 100%); border: none; box-shadow: var(--shadow-sm); }
+.btn-primary:hover { background: linear-gradient(135deg,var(--color-primary-hover) 0%,var(--color-accent) 100%); box-shadow: var(--shadow-md); }
+.btn-danger { background: var(--color-danger); border: none; }
+.btn-danger:hover { background: var(--color-danger-hover); }
+.btn-outline-primary { border:1px solid var(--color-primary); color: var(--color-primary); }
+.btn-outline-primary:hover { background: var(--color-primary); color:#fff; }
+
+/* Tablas */
+.content table.table { background: var(--color-surface); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); }
+.content table.table thead { background: var(--color-surface-alt); }
+.content table.table th { font-weight:600; font-size:.85rem; color: var(--color-text-muted); border-bottom:1px solid var(--color-border); }
+.content table.table td { vertical-align: middle; }
+.content table.table tbody tr { transition: background var(--transition-fast); }
+.content table.table tbody tr:hover { background: rgba(37,99,235,.06); }
+.content table.table a.btn-link, .content table.table a { text-decoration:none; font-weight:500; }
+.content table.table a:hover { text-decoration:underline; }
+
+/* Tarjetas genericas envolviendo contenido */
+.page-card { background: var(--color-surface); border:1px solid var(--color-border); border-radius: var(--radius-lg); padding:1.25rem 1.5rem; box-shadow: var(--shadow-sm); margin-bottom:1.5rem; }
+
+/* Inputs y formularios */
+.form-control, select, textarea { border-radius: var(--radius-sm); border-color: var(--color-border); transition: box-shadow var(--transition-fast), border-color var(--transition-fast); }
+.form-control:focus, select:focus, textarea:focus { border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(37,99,235,.25); }
+
+/* Header h2 ya refinado en componente */
+
+/* Nav lateral */
+.sidebar { background: linear-gradient(160deg,var(--color-gradient-start) 0%, var(--color-gradient-end) 100%) !important; box-shadow: var(--shadow-lg); }
+
+/* Scrollbar estilizado (webkit) */
+::-webkit-scrollbar { width: 10px; height:10px; }
+::-webkit-scrollbar-track { background: var(--color-surface-alt); }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: var(--radius-md); border:2px solid var(--color-surface-alt); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-primary-hover); }
+
+/* Top bar */
+.top-row { background: var(--color-surface); backdrop-filter: blur(6px); box-shadow: var(--shadow-sm); }
+.top-row a { color: var(--color-text-muted); }
+.top-row a:hover { color: var(--color-primary); }
+
+/* Animaciones sutiles */
+.fade-in { animation: fadeIn .4s ease; }
+@keyframes fadeIn { from { opacity:0; transform: translateY(6px); } to { opacity:1; transform: translateY(0); } }
+
+/* Estado de login / etiquetas */
+.badge-soft-primary { background: rgba(37,99,235,.15); color: var(--color-primary); padding:.35rem .6rem; border-radius: var(--radius-sm); font-size:.7rem; font-weight:600; }
+
+/* Links de acciones en tablas */
+.action-link { padding:.35rem .65rem; border-radius: var(--radius-sm); font-size:.75rem; background: rgba(37,99,235,.12); color: var(--color-primary); display:inline-block; }
+.action-link:hover { background: rgba(37,99,235,.25); color: var(--color-primary-hover); text-decoration:none; }
+.action-link-danger { background: rgba(220,38,38,.15); color: var(--color-danger); }
+.action-link-danger:hover { background: rgba(220,38,38,.30); color: var(--color-danger-hover); }
+
+/* Footer placeholder */
+.app-footer { text-align:center; font-size:.75rem; color: var(--color-text-muted); padding:2rem 0 1rem; }
+
+/* Responsivo refinado */
+@media (max-width: 768px) {
+  .content table.table { font-size:.8rem; }
+  .btn { font-size:.8rem; }
+  .page-card { padding:1rem; }
+}
