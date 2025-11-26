@@ -11,36 +11,40 @@
 }
 else
 {
-    <button class="btn btn-primary" @onclick="AgregarCliente">Agregar Nuevo Cliente</button>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Direccion</th>
-                <th>Localidad</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var cliente in clientes)
-            {
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <button class="btn btn-primary" @onclick="AgregarCliente"><span class="me-1">+</span>Agregar Cliente</button>
+        <span class="badge-soft-primary">Total: @clientes.Count</span>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
                 <tr>
-                    <td>@cliente.Id</td>
-                    <td>@cliente.Nombre</td>
-                    <td>@cliente.Direccion</td>
-                    <td>@cliente.Localidad.Nombre</td>
-                    <td>
-                        <a href="/nuevoeditarcliente?IdClienteEditado=@cliente.Id">Editar</a>
-                    </td>
-                    <td>
-                        <button title="Eliminar" class="btn btn-danger" @onclick="@(()=>Eliminar(cliente))">Eliminar</button>
-                    </td>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Localidad</th>
+                    <th class="text-center" colspan="2">Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var cliente in clientes)
+                {
+                    <tr>
+                        <td>@cliente.Id</td>
+                        <td>@cliente.Nombre</td>
+                        <td>@cliente.Direccion</td>
+                        <td>@cliente.Localidad?.Nombre</td>
+                        <td class="text-center">
+                            <a class="action-link" href="/nuevoeditarcliente?IdClienteEditado=@cliente.Id">Editar</a>
+                        </td>
+                        <td class="text-center">
+                            <button title="Eliminar" class="action-link action-link-danger border-0 bg-transparent" @onclick="@(()=>Eliminar(cliente))">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
 @code {
     private List<Cliente>? clientes;
@@ -51,7 +55,6 @@ else
     }
     private void AgregarCliente()
     {
-        // Redirigir a la página para agregar una nueva localidad
         NavigationManager.NavigateTo("/nuevoeditarcliente");
     }
     private async Task Eliminar(Cliente cliente)
@@ -68,9 +71,15 @@ else
 
         if (respuesta.IsConfirmed)
         {
-            await ClienteService.DeleteAsync(cliente.Id);
-            clientes = await ClienteService.GetAllAsync(string.Empty);
-            StateHasChanged();
+            await Eliminar2(cliente);
         }
     }
-} 
+
+    private async Task Eliminar2(Cliente cliente)
+    {
+        await ClienteService.DeleteAsync(cliente.Id);
+        clientes = await ClienteService.GetAllAsync(string.Empty);
+        StateHasChanged();
+        await SweetAlert.FireAsync("Cliente", "Eliminada correctamente", SweetAlertIcon.Success);
+    }
+}

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DSClientes">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString></ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>11111111-aaaa-bbbb-cccc-111111111111</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DSClientes">
+      <Fields>
+        <Field Name="Id"><DataField>Id</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
+        <Field Name="Nombre"><DataField>Nombre</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Dni"><DataField>Dni</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Email"><DataField>Email</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Direccion"><DataField>Direccion</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Telefono"><DataField>Telefono</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Localidad"><DataField>Localidad</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+      </Fields>
+      <Query><DataSourceName>DSClientes</DataSourceName><CommandText></CommandText></Query>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Textbox Name="TituloClientes"><Top>0.2in</Top><Left>0.2in</Left><Height>0.3in</Height><Width>6.5in</Width><Value>Tienda Hogar - Reporte de Clientes</Value><Style><FontSize>16pt</FontSize><FontWeight>Bold</FontWeight><TextAlign>Center</TextAlign></Style></Textbox>
+      <Tablix Name="TablixClientes">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn><Width>0.6in</Width></TablixColumn>
+            <TablixColumn><Width>1.2in</Width></TablixColumn>
+            <TablixColumn><Width>1.0in</Width></TablixColumn>
+            <TablixColumn><Width>1.4in</Width></TablixColumn>
+            <TablixColumn><Width>1.4in</Width></TablixColumn>
+            <TablixColumn><Width>1.2in</Width></TablixColumn>
+            <TablixColumn><Width>1.2in</Width></TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow><Height>0.28in</Height><TablixCells>
+              <TablixCell><CellContents><Textbox Name="HcId"><Value>Id</Value><Style><FontWeight>Bold</FontWeight><BackgroundColor>LightGray</BackgroundColor></Style></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="HcNombre"><Value>Nombre</Value><Style><FontWeight>Bold</FontWeight><BackgroundColor>LightGray</BackgroundColor></Style></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="HcDni"><Value>DNI</Value><Style><FontWeight>Bold</FontWeight><BackgroundColor>LightGray</BackgroundColor></Style></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="HcEmail"><Value>Email</Value><Style><FontWeight>Bold</FontWeight><BackgroundColor>LightGray</BackgroundColor></Style></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="HcDireccion"><Value>Dirección</Value><Style><FontWeight>Bold</FontWeight><BackgroundColor>LightGray</BackgroundColor></Style></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="HcTelefono"><Value>Teléfono</Value><Style><FontWeight>Bold</FontWeight><BackgroundColor>LightGray</BackgroundColor></Style></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="HcLocalidad"><Value>Localidad</Value><Style><FontWeight>Bold</FontWeight><BackgroundColor>LightGray</BackgroundColor></Style></Textbox></CellContents></TablixCell>
+            </TablixCells></TablixRow>
+            <TablixRow><Height>0.24in</Height><TablixCells>
+              <TablixCell><CellContents><Textbox Name="DcId"><Value>=Fields!Id.Value</Value></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="DcNombre"><Value>=Fields!Nombre.Value</Value></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="DcDni"><Value>=Fields!Dni.Value</Value></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="DcEmail"><Value>=Fields!Email.Value</Value></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="DcDireccion"><Value>=Fields!Direccion.Value</Value></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="DcTelefono"><Value>=Fields!Telefono.Value</Value></Textbox></CellContents></TablixCell>
+              <TablixCell><CellContents><Textbox Name="DcLocalidad"><Value>=Fields!Localidad.Value</Value></Textbox></CellContents></TablixCell>
+            </TablixCells></TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <DataSetName>DSClientes</DataSetName>
+        <TablixColumnHierarchy><TablixMembers><TablixMember /><TablixMember /><TablixMember /><TablixMember /><TablixMember /><TablixMember /><TablixMember /></TablixMembers></TablixColumnHierarchy>
+        <TablixRowHierarchy><TablixMembers><TablixMember /><TablixMember /></TablixMembers></TablixRowHierarchy>
+        <Top>0.6in</Top><Left>0.2in</Left><Height>0.52in</Height><Width>7in</Width>
+      </Tablix>
+    </ReportItems>
+    <Height>1.3in</Height>
+  </Body>
+  <Width>7.4in</Width>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>22222222-bbbb-cccc-dddd-222222222222</rd:ReportID>
+</Report>

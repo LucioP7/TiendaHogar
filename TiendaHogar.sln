@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movil", "Movil\Movil.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{9D939FAC-D262-4ED5-9B37-211121207DE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desktop", "Desktop\Desktop.csproj", "{FF49F4EA-0320-4C7E-97FE-0A5A26F7A118}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{9D939FAC-D262-4ED5-9B37-211121207DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D939FAC-D262-4ED5-9B37-211121207DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D939FAC-D262-4ED5-9B37-211121207DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF49F4EA-0320-4C7E-97FE-0A5A26F7A118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF49F4EA-0320-4C7E-97FE-0A5A26F7A118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF49F4EA-0320-4C7E-97FE-0A5A26F7A118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF49F4EA-0320-4C7E-97FE-0A5A26F7A118}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

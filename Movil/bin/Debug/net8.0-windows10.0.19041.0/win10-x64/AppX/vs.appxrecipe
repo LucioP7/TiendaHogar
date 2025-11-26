@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-11-20T19:41:17.585</Modified>
+      <Modified>2025-11-20T20:33:20.984</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Movil.dll">
       <PackagePath>Movil.dll</PackagePath>
-      <Modified>2025-11-20T19:41:15.210</Modified>
+      <Modified>2025-11-20T20:33:20.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Movil.exe</PackagePath>
-      <Modified>2025-11-20T19:41:15.280</Modified>
+      <Modified>2025-11-20T20:33:20.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -663,7 +663,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Service\bin\Debug\net8.0\Service.dll">
       <PackagePath>Service.dll</PackagePath>
-      <Modified>2025-11-20T20:13:18.913</Modified>
+      <Modified>2025-11-20T20:52:26.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

@@ -13,33 +13,37 @@
 }
 else
 {
-    <a href="/agregarlocalidad" class="btn btn-primary">Agregar Localidad</a>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var localidad in localidades)
-            {
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a href="/agregarlocalidad" class="btn btn-primary"><span class="me-1">+</span>Agregar Localidad</a>
+        <span class="badge-soft-primary">Total: @localidades.Count</span>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
                 <tr>
-                    <td>@localidad.Id</td>
-                    <td>@localidad.Nombre</td>
-                    <td>
-                        <a href="/editarlocalidad?IdLocalidadEditada=@localidad.Id">Editar</a>
-                    </td>
-                    <td>
-                        <button title="Eliminar" class="btn btn-danger" @onclick="@(()=>Eliminar(localidad))">Eliminar</button>
-                    </td>
-
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th class="text-center" colspan="2">Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var localidad in localidades)
+                {
+                    <tr>
+                        <td>@localidad.Id</td>
+                        <td>@localidad.Nombre</td>
+                        <td class="text-center">
+                            <a class="action-link" href="/editarlocalidad?IdLocalidadEditada=@localidad.Id">Editar</a>
+                        </td>
+                        <td class="text-center">
+                            <button title="Eliminar" class="action-link action-link-danger border-0 bg-transparent" @onclick="@(()=>Eliminar(localidad))">Eliminar</button>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
 
 @code {
@@ -65,17 +69,15 @@ else
 
         if (respuesta.IsConfirmed)
         {
-            try
-            {
-                logger.LogInformation($"Borrando localidad {localidad.Nombre}");
-                await LocalidadService.DeleteAsync(localidad.Id);
-                localidades = await LocalidadService.GetAllAsync(string.Empty);
-            }
-            catch (Exception ex)
-            {
-                await SweetAlert.FireAsync("Error", $"No se pudo borrar: {ex.Message}", SweetAlertIcon.Error);
-            }
-            StateHasChanged();
+            await Eliminar2(localidad);
         }
+    }
+
+    private async Task Eliminar2(Localidad localidad)
+    {
+        await LocalidadService.DeleteAsync(localidad.Id);
+        localidades = await LocalidadService.GetAllAsync(string.Empty);
+        StateHasChanged();
+        await SweetAlert.FireAsync("Localidad", "Eliminada correctamente", SweetAlertIcon.Success);
     }
 }

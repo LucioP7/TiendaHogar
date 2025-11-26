@@ -7,13 +7,13 @@
 
 main { flex: 1; }
 
-.sidebar { /* gradiente ya forzado en theme.css, añadimos sombra y borde visual */
-    border-right: 1px solid rgba(255,255,255,.08);
+.sidebar { /* ahora coherente con tema cálido */
+    border-right: 1px solid rgba(184, 137, 104, .25);
 }
 
 .top-row {
-    background-color: #ffffff0d; /* override para consistencia, tema aplica fondo final */
-    border-bottom: 1px solid #e2e8f0;
+    background-color: #ffffff0d; /* mantiene transparencia sobre el gradiente del tema */
+    border-bottom: 1px solid #e8ddd2; /* borde beige */
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;

@@ -3,38 +3,46 @@
 @inject NavigationManager NavigationManager
 @inject SweetAlertService SweetAlert
 
-<HeaderPage TitlePage="Categorías" />
+<HeaderPage TitlePage="CategorÃ­as" />
 
 @if (categorias == null)
 {
-    <p><em>Obteniendo lista de categorías...</em></p>
+    <p><em>Obteniendo lista de categorÃ­as...</em></p>
 }
 else
 {
-    <button class="btn btn-primary mb-2" @onclick="AgregarCategoria">Agregar Categoría</button>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var categoria in categorias)
-            {
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <button class="btn btn-primary" @onclick="AgregarCategoria"><span class="me-1">+</span>Agregar CategorÃ­a</button>
+        <span class="badge-soft-primary">Total: @categorias.Count</span>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
                 <tr>
-                    <td>@categoria.Id</td>
-                    <td>@categoria.Nombre</td>
-                    <td>@categoria.Descripcion</td>
-                    <td><a href="/nuevaeditarcategoria?IdCategoriaEditada=@categoria.Id">Editar</a></td>
-                    <td><button class="btn btn-danger" @onclick="() => Eliminar(categoria)">Eliminar</button></td>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>DescripciÃ³n</th>
+                    <th class="text-center" colspan="2">Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var categoria in categorias)
+                {
+                    <tr>
+                        <td>@categoria.Id</td>
+                        <td>@categoria.Nombre</td>
+                        <td>@categoria.Descripcion</td>
+                        <td class="text-center">
+                            <a class="action-link" href="/nuevaeditarcategoria?IdCategoriaEditada=@categoria.Id">Editar</a>
+                        </td>
+                        <td class="text-center">
+                            <button class="action-link action-link-danger border-0 bg-transparent" @onclick="() => Eliminar(categoria)">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
 
 @code {
@@ -54,18 +62,24 @@ else
     {
         var r = await SweetAlert.FireAsync(new SweetAlertOptions
         {
-            Title = "Eliminar Categoría",
-            Text = $"¿Está seguro de eliminar {categoria.Nombre}?",
+            Title = "Eliminar CategorÃ­a",
+            Text = $"Â¿EstÃ¡ seguro de eliminar {categoria.Nombre}?",
             Icon = SweetAlertIcon.Warning,
             ShowCancelButton = true,
-            ConfirmButtonText = "Sí",
+            ConfirmButtonText = "SÃ­",
             CancelButtonText = "No"
         });
         if (r.IsConfirmed)
         {
-            await CategoriaService.DeleteAsync(categoria.Id);
-            categorias = await CategoriaService.GetAllAsync(string.Empty);
-            StateHasChanged();
+            await Eliminar2(categoria);
         }
+    }
+
+    private async Task Eliminar2(Categoria categoria)
+    {
+        await CategoriaService.DeleteAsync(categoria.Id);
+        categorias = await CategoriaService.GetAllAsync(string.Empty);
+        StateHasChanged();
+        await SweetAlert.FireAsync("Categoria", "Eliminada correctamente", SweetAlertIcon.Success);
     }
 }

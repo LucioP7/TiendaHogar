@@ -11,32 +11,36 @@
 }
 else
 {
-    <button class="btn btn-primary mb-2" @onclick="AgregarMarca">Agregar Marca</button>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var marca in marcas)
-            {
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <button class="btn btn-primary" @onclick="AgregarMarca"><span class="me-1">+</span>Agregar Marca</button>
+        <span class="badge-soft-primary">Total: @marcas.Count</span>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
                 <tr>
-                    <td>@marca.Id</td>
-                    <td>@marca.Nombre</td>
-                    <td>
-                        <a href="/nuevaeditarmarca?IdMarcaEditada=@marca.Id">Editar</a>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger" @onclick="() => Eliminar(marca)">Eliminar</button>
-                    </td>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th class="text-center" colspan="2">Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var marca in marcas)
+                {
+                    <tr>
+                        <td>@marca.Id</td>
+                        <td>@marca.Nombre</td>
+                        <td class="text-center">
+                            <a class="action-link" href="/nuevaeditarmarca?IdMarcaEditada=@marca.Id">Editar</a>
+                        </td>
+                        <td class="text-center">
+                            <button class="action-link action-link-danger border-0 bg-transparent" @onclick="() => Eliminar(marca)">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
 
 @code {
@@ -83,17 +87,15 @@ else
         });
         if (r.IsConfirmed)
         {
-            try
-            {
-                await MarcaService.DeleteAsync(marca.Id);
-                await SweetAlert.FireAsync("Marca", "Eliminada correctamente", SweetAlertIcon.Success);
-                await CargarMarcas();
-                StateHasChanged();
-            }
-            catch (Exception ex)
-            {
-                await SweetAlert.FireAsync("Error", "No se pudo eliminar: " + ex.Message, SweetAlertIcon.Error);
-            }
+            await Eliminar2(marca);
         }
+    }
+
+    private async Task Eliminar2(Marca marca)
+    {
+        await MarcaService.DeleteAsync(marca.Id);
+        marcas = await MarcaService.GetAllAsync(string.Empty);
+        StateHasChanged();
+        await SweetAlert.FireAsync("Marca", "Eliminada correctamente", SweetAlertIcon.Success);
     }
 }

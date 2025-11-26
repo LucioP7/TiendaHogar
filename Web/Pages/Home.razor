@@ -5,14 +5,24 @@
 
 @if (!isAuthenticated)
 {
-    <h2>Bienvenido a Tienda Hogar</h2>
-    <p>Encuentra productos para tu hogar: organización, limpieza, cocina y más. Explora las categorías y gestiona tus datos fácilmente.</p>
-    <p>Inicia sesión para acceder a la administración de productos, clientes y más.</p>
+    <div class="page-card">
+        <h3 class="mb-2">Bienvenido a Tienda Hogar</h3>
+        <p class="mt-3">Encuentra productos para tu hogar: organización, limpieza, cocina y más. Explora las categorías y gestiona tus datos fácilmente.</p>
+        <p>Inicia sesión para acceder a la administración de productos, clientes y más.</p>
+    </div>
+    <div class="alert alert-warning mt-2" style="border:1px solid var(--color-border); background: #fff7ed; color: var(--color-text);">
+        <strong>Recomendación:</strong> Si aún no tienes una cuenta, regístrate para aprovechar todas las funcionalidades de Tienda Hogar.
+    </div>
 }
 else
 {
-    <h2>Bienvenido @displayName a Tienda Hogar</h2>
-    <p>Administra tu inventario, marcas, categorías y proveedores desde el menú lateral. ¡Gracias por ser parte de Tienda Hogar!</p>
+    <div class="page-card">
+        <h3 class="mb-2">Bienvenido @displayName a Tienda Hogar</h3>
+        <p class="mt-3">Administra tu inventario, marcas, categorías y proveedores desde el menú lateral. ¡Gracias por ser parte de Tienda Hogar!</p>
+    </div>
+    <div class="alert alert-warning mt-2" style="border:1px solid var(--color-border); background: #fff7ed; color: var(--color-text);">
+        <strong>Recomendación:</strong> Mantén tus categorías y marcas organizadas para acelerar la búsqueda y mejorar la experiencia de tus clientes.
+    </div>
 }
 
 @code {
