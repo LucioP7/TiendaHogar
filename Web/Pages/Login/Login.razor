@@ -66,6 +66,7 @@ else
         var resultado = await AuthService.SignInWithEmailPassword(email, password);
         isAuthenticated = await AuthService.IsUserAuthenticated();
         StateHasChanged();
+        NavigationManager.NavigateTo("/");
     }
 
 
