@@ -9,12 +9,15 @@
         <viewModels:ProductosViewModel />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout Spacing="10" Padding="16">
-        <SearchBar Placeholder="Buscar por nombre o descripción..."
+    <!-- Layout base -->
+    <Grid RowDefinitions="Auto,*" Padding="16">
+        <!-- Buscador -->
+        <SearchBar Grid.Row="0" Placeholder="Buscar por nombre o descripción..."
                    Text="{Binding FilterProducts}"
                    SearchCommand="{Binding FiltrarProductosCommand}" />
 
-        <RefreshView IsRefreshing="{Binding IsRefreshing}"
+        <!-- Lista + Refresh -->
+        <RefreshView Grid.Row="1" IsRefreshing="{Binding IsRefreshing}"
                      Command="{Binding ObtenerProductosCommand}">
             <CollectionView ItemsSource="{Binding Productos}"
                             SelectionMode="Single"
@@ -70,11 +73,23 @@
             </CollectionView>
         </RefreshView>
 
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
-            <Button Text="Agregar"
-                    Command="{Binding AgregarProductoCommand}" />
-            <Button Text="Editar"
-                    Command="{Binding EditarProductoCommand}" />
-        </Grid>
-    </VerticalStackLayout>
+        <!-- Botón flotante Editar (FAB) -->
+        <Button x:Name="FabEditar"
+                Grid.RowSpan="2"
+                Text="✎"
+                FontSize="24"
+                CornerRadius="28"
+                WidthRequest="56"
+                HeightRequest="56"
+                BackgroundColor="{StaticResource Violet}"
+                TextColor="White"
+                Command="{Binding EditarProductoCommand}"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Margin="0,0,8,8">
+            <Button.Shadow>
+                <Shadow Radius="15" Opacity="0.5" Brush="{StaticResource Gray900}" Offset="5,5" />
+            </Button.Shadow>
+        </Button>
+    </Grid>
 </ContentPage>

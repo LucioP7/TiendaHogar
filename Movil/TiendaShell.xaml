@@ -25,6 +25,8 @@
         <contentviews:FlyoutFooter />
     </Shell.FlyoutFooter>
 
+    <!-- Colores del Shell por estilo global; se evita morado por nueva paleta -->
+
     <FlyoutItem Route="nuestra_app" 
             FlyoutDisplayOptions="AsMultipleItems" x:Name="FlyoutItemsPrincipal" >
         <ShellContent

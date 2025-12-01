@@ -42,7 +42,7 @@
 
             <Button Text="Crear cuenta nueva"
                     Command="{Binding RegistrarseCommand}"
-                    BackgroundColor="#7B68EE"
+                    BackgroundColor="{StaticResource NaranjaClaro}"
                     TextColor="{StaticResource PrimaryDarkText}" />
         </VerticalStackLayout>
     </ScrollView>
