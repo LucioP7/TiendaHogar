@@ -154,7 +154,6 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\conveniente.scale-100.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\electrodomesticos.scale-100.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\electronica.scale-100.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo.scale-100.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\oferta.scale-100.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\photo.scale-100.jpg
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\rango.scale-100.png
@@ -202,3 +201,4 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.JSInterop.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.JSInterop.WebAssembly.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.IO.Pipelines.dll
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo.scale-100.jpg

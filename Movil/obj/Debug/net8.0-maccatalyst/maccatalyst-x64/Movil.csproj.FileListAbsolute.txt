@@ -266,7 +266,6 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\macca
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\electronica.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\conveniente.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\rango.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\fondo.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\casa1.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oferta.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cerrar.png
@@ -326,3 +325,4 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-maccatalyst\macca
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.JSInterop.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.JSInterop.WebAssembly.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\System.IO.Pipelines.dll
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\fondo.jpg

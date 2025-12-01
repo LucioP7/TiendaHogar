@@ -289,7 +289,6 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\res
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Resources\electronica.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Resources\conveniente.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Resources\oferta.png
-C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Resources\fondo.png
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\mauiimage.stamp
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\mauiimage.outputs
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\f\MauiInfo.plist
@@ -334,3 +333,7 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\ios-arm64\Mic
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\ios-arm64\Microsoft.JSInterop.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\ios-arm64\Microsoft.JSInterop.WebAssembly.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-ios\ios-arm64\System.IO.Pipelines.dll
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Resources\fondo.jpg
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\splash_54CB2EE0E205151147E6579C2F7BFDE4661EA30C400543A8C3629503C252B4A9.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\splash_54CB2EE0E205151147E6579C2F7BFDE4661EA30C400543A8C3629503C252B4A9@2x.png
+C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\splash_54CB2EE0E205151147E6579C2F7BFDE4661EA30C400543A8C3629503C252B4A9@3x.png

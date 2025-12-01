@@ -26,7 +26,7 @@
     <Color x:Key="Gray950">#1E140A</Color>
 
     <!-- Acentos -->
-    <Color x:Key="Violeta">#7B68EE</Color>
+    <Color x:Key="Violeta">#b45309</Color>
     <Color x:Key="NaranjaClaro">#FBD38D</Color>
 
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>

@@ -81,7 +81,7 @@
                 CornerRadius="28"
                 WidthRequest="56"
                 HeightRequest="56"
-                BackgroundColor="{StaticResource Violet}"
+                BackgroundColor="{StaticResource Violeta}"
                 TextColor="White"
                 Command="{Binding EditarProductoCommand}"
                 HorizontalOptions="End"

@@ -9,16 +9,17 @@ namespace Movil.Views
             InitializeComponent();
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
-            var viewmodel = this.BindingContext as ProductosViewModel;
-            //if (viewmodel.NotaSeleccionada != null)
-            //{
-            viewmodel.ObtenerProductos();
-            viewmodel.SelectedProduct = null;
-
-            //}
+            if (BindingContext is ProductosViewModel viewmodel)
+            {
+                // Solo cargar si está vacío. No forzar SelectedProduct a null.
+                if (viewmodel.Productos == null || viewmodel.Productos.Count == 0)
+                {
+                    await viewmodel.ObtenerProductos();
+                }
+            }
         }
     }
 }
