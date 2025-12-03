@@ -9,14 +9,11 @@
         <viewModels:ProductosViewModel />
     </ContentPage.BindingContext>
 
-    <!-- Layout base -->
     <Grid RowDefinitions="Auto,*" Padding="16">
-        <!-- Buscador -->
         <SearchBar Grid.Row="0" Placeholder="Buscar por nombre o descripción..."
                    Text="{Binding FilterProducts}"
                    SearchCommand="{Binding FiltrarProductosCommand}" />
 
-        <!-- Lista + Refresh -->
         <RefreshView Grid.Row="1" IsRefreshing="{Binding IsRefreshing}"
                      Command="{Binding ObtenerProductosCommand}">
             <CollectionView ItemsSource="{Binding Productos}"
@@ -29,13 +26,11 @@
                 </CollectionView.EmptyView>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <!-- Item con fondo transparente y borde ligero -->
                         <Border Padding="12" Margin="0,6" BackgroundColor="Transparent">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="8" />
                             </Border.StrokeShape>
                             <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto">
-                                <!-- Fila de título y badge oferta al lado del nombre -->
                                 <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Spacing="8">
                                     <Label Text="{Binding Nombre}"
                                            FontAttributes="Bold" />
@@ -72,6 +67,25 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </RefreshView>
+
+        <!-- Botón flotante Eliminar (arriba de Editar) -->
+        <Button x:Name="FabEliminar"
+                Grid.RowSpan="2"
+                Text="🗑"
+                FontSize="22"
+                CornerRadius="28"
+                WidthRequest="56"
+                HeightRequest="56"
+                BackgroundColor="{StaticResource Rojo}" 
+                TextColor="White"
+                Command="{Binding EliminarProductoCommand}"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Margin="0,0,8,72">
+            <Button.Shadow>
+                <Shadow Radius="15" Opacity="0.5" Brush="{StaticResource Gray900}" Offset="5,5" />
+            </Button.Shadow>
+        </Button>
 
         <!-- Botón flotante Editar (FAB) -->
         <Button x:Name="FabEditar"

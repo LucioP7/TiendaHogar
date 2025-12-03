@@ -1080,3 +1080,7 @@ C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\a
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll

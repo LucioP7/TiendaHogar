@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-12-01T15:12:05.914</Modified>
+      <Modified>2025-12-03T12:16:29.140</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-12-01T15:07:17.217</Modified>
+      <Modified>2025-12-03T12:16:28.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Movil.runtimeconfig.json">
       <PackagePath>Movil.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Movil.dll">
       <PackagePath>Movil.dll</PackagePath>
-      <Modified>2025-12-01T15:12:03.266</Modified>
+      <Modified>2025-12-03T12:16:26.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Movil.exe</PackagePath>
-      <Modified>2025-12-01T15:12:03.339</Modified>
+      <Modified>2025-12-03T12:16:26.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -303,7 +303,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\source\repos\TiendaHogar\Movil\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Movil.deps.json">
       <PackagePath>Movil.deps.json</PackagePath>
-      <Modified>2025-12-01T15:07:16.944</Modified>
+      <Modified>2025-12-03T12:16:28.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alera\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

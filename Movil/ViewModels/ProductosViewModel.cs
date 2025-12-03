@@ -39,13 +39,20 @@ namespace Movil.ViewModels
         public Producto? SelectedProduct
         {
             get => selectedProduct;
-            set { selectedProduct = value; OnPropertyChanged(); EditarProductoCommand.ChangeCanExecute(); }
+            set
+            {
+                selectedProduct = value;
+                OnPropertyChanged();
+                EditarProductoCommand.ChangeCanExecute();
+                EliminarProductoCommand.ChangeCanExecute();
+            }
         }
 
         public Command ObtenerProductosCommand { get; }
         public Command FiltrarProductosCommand { get; }
         public Command AgregarProductoCommand { get; }
         public Command EditarProductoCommand { get; }
+        public Command EliminarProductoCommand { get; }
 
         public ProductosViewModel()
         {
@@ -53,6 +60,7 @@ namespace Movil.ViewModels
             FiltrarProductosCommand = new Command(async () => await FiltrarProductos());
             AgregarProductoCommand = new Command(async () => await AgregarProducto());
             EditarProductoCommand = new Command(async (_) => await EditarProducto(), _ => SelectedProduct != null);
+            EliminarProductoCommand = new Command(async () => await EliminarProducto(), () => SelectedProduct != null);
             _ = ObtenerProductos();
         }
 
@@ -62,7 +70,6 @@ namespace Movil.ViewModels
             {
                 { "ProductToEdit", SelectedProduct }
             };
-            // Ruta absoluta completa dentro del Shell
             await Shell.Current.GoToAsync("//nuestra_app/productos/AgregarEditarProducto", navigationParameter);
         }
 
@@ -72,8 +79,43 @@ namespace Movil.ViewModels
             {
                 { "ProductToEdit", null }
             };
-            // Ruta absoluta completa dentro del Shell
             await Shell.Current.GoToAsync("//nuestra_app/productos/AgregarEditarProducto", navigationParameter);
+        }
+
+        private async Task EliminarProducto()
+        {
+            if (SelectedProduct == null)
+                return;
+
+            // Confirmación de usuario
+            var confirmar = await Application.Current.MainPage.DisplayAlert(
+                "Eliminar producto",
+                $"¿Desea eliminar \"{SelectedProduct.Nombre}\"?",
+                "Eliminar",
+                "Cancelar");
+
+            if (!confirmar)
+                return;
+
+            try
+            {
+                // Intenta eliminar por Id si existe; si tu GenericService admite entidad, cámbialo a DeleteAsync(SelectedProduct)
+                // Asumiendo una propiedad Id en Producto:
+                await productoService.DeleteAsync(SelectedProduct.Id);
+
+                // Quitar de la colección y lista base
+                productosListToFilter?.Remove(SelectedProduct);
+                Productos.Remove(SelectedProduct);
+
+                // Limpiar selección
+                SelectedProduct = null;
+
+                await Application.Current.MainPage.DisplayAlert("Productos", "Producto eliminado correctamente.", "OK");
+            }
+            catch
+            {
+                await Application.Current.MainPage.DisplayAlert("Productos", "No se pudo eliminar el producto.", "OK");
+            }
         }
 
         public async Task FiltrarProductos()

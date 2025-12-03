@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Backend.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class inicio : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -369,16 +369,16 @@ namespace Backend.Migrations
                 columns: new[] { "Id", "Eliminado", "Fecha", "FormaDePago", "Iva", "ProveedorId", "Total" },
                 values: new object[,]
                 {
-                    { 1, false, new DateTime(2025, 10, 21, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(950), 0, 21, 1, 120000 },
-                    { 2, false, new DateTime(2025, 10, 22, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(973), 1, 21, 2, 180000 },
-                    { 3, false, new DateTime(2025, 10, 23, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(975), 3, 21, 3, 1200 },
-                    { 4, false, new DateTime(2025, 10, 24, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(977), 0, 21, 4, 800 },
-                    { 5, false, new DateTime(2025, 10, 25, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(979), 2, 21, 5, 1500 },
-                    { 6, false, new DateTime(2025, 10, 26, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(980), 3, 21, 6, 3500 },
-                    { 7, false, new DateTime(2025, 10, 27, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(982), 0, 21, 7, 9000 },
-                    { 8, false, new DateTime(2025, 10, 28, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(984), 1, 21, 8, 2500 },
-                    { 9, false, new DateTime(2025, 10, 29, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(985), 2, 21, 9, 5000 },
-                    { 10, false, new DateTime(2025, 10, 30, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(987), 0, 21, 10, 7000 }
+                    { 1, false, new DateTime(2025, 11, 3, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6429), 0, 21, 1, 120000 },
+                    { 2, false, new DateTime(2025, 11, 4, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6453), 1, 21, 2, 180000 },
+                    { 3, false, new DateTime(2025, 11, 5, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6455), 3, 21, 3, 1200 },
+                    { 4, false, new DateTime(2025, 11, 6, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6457), 0, 21, 4, 800 },
+                    { 5, false, new DateTime(2025, 11, 7, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6459), 2, 21, 5, 1500 },
+                    { 6, false, new DateTime(2025, 11, 8, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6461), 3, 21, 6, 3500 },
+                    { 7, false, new DateTime(2025, 11, 9, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6462), 0, 21, 7, 9000 },
+                    { 8, false, new DateTime(2025, 11, 10, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6464), 1, 21, 8, 2500 },
+                    { 9, false, new DateTime(2025, 11, 11, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6466), 2, 21, 9, 5000 },
+                    { 10, false, new DateTime(2025, 11, 12, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6468), 0, 21, 10, 7000 }
                 });
 
             migrationBuilder.InsertData(
@@ -403,16 +403,16 @@ namespace Backend.Migrations
                 columns: new[] { "Id", "ClienteId", "Eliminado", "Fecha", "FormaPago", "Iva", "Total" },
                 values: new object[,]
                 {
-                    { 1, 1, false, new DateTime(2025, 10, 31, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1027), 0, 21m, 120000m },
-                    { 2, 2, false, new DateTime(2025, 11, 1, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1032), 1, 21m, 180000m },
-                    { 3, 3, false, new DateTime(2025, 11, 2, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1034), 3, 21m, 1200m },
-                    { 4, 4, false, new DateTime(2025, 11, 3, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1036), 0, 21m, 800m },
-                    { 5, 5, false, new DateTime(2025, 11, 4, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1039), 2, 21m, 1500m },
-                    { 6, 6, false, new DateTime(2025, 11, 5, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1042), 3, 21m, 3500m },
-                    { 7, 7, false, new DateTime(2025, 11, 6, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1044), 0, 21m, 9000m },
-                    { 8, 8, false, new DateTime(2025, 11, 7, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1045), 1, 21m, 2500m },
-                    { 9, 9, false, new DateTime(2025, 11, 8, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1048), 2, 21m, 5000m },
-                    { 10, 10, false, new DateTime(2025, 11, 9, 17, 49, 3, 404, DateTimeKind.Local).AddTicks(1050), 0, 21m, 7000m }
+                    { 1, 1, false, new DateTime(2025, 11, 13, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6511), 0, 21m, 120000m },
+                    { 2, 2, false, new DateTime(2025, 11, 14, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6517), 1, 21m, 180000m },
+                    { 3, 3, false, new DateTime(2025, 11, 15, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6519), 3, 21m, 1200m },
+                    { 4, 4, false, new DateTime(2025, 11, 16, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6522), 0, 21m, 800m },
+                    { 5, 5, false, new DateTime(2025, 11, 17, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6524), 2, 21m, 1500m },
+                    { 6, 6, false, new DateTime(2025, 11, 18, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6526), 3, 21m, 3500m },
+                    { 7, 7, false, new DateTime(2025, 11, 19, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6528), 0, 21m, 9000m },
+                    { 8, 8, false, new DateTime(2025, 11, 20, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6530), 1, 21m, 2500m },
+                    { 9, 9, false, new DateTime(2025, 11, 21, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6532), 2, 21m, 5000m },
+                    { 10, 10, false, new DateTime(2025, 11, 22, 9, 19, 20, 708, DateTimeKind.Local).AddTicks(6534), 0, 21m, 7000m }
                 });
 
             migrationBuilder.InsertData(
