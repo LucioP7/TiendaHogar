@@ -70,7 +70,7 @@ namespace TiendaHogarDesktop.Views
                 ListProductos.DataSource = productos;
 
                 // Ocultar columnas no deseadas y relaciones complejas
-                dataGridProductosView.OcultarColumnas(new[] { "Id", "CategoriaId", "MarcaId", "ProveedorId" });
+                dataGridProductosView.OcultarColumnas(new[] { "Id", "CategoriaId", "MarcaId", "ProveedorId", "Proveedor" });
             }
             catch (Exception ex)
             {
