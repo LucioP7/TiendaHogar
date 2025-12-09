@@ -1,7 +1,9 @@
-﻿using Service.Interfaces;
+﻿using Service.Enums;
+using Service.Interfaces;
 using Service.Models;
 using Service.Services;
 using System.ComponentModel;
+using TiendaHogarDesktop.ExtensionMethods;
 
 namespace TiendaHogarDesktop.Views
 {
@@ -40,6 +42,16 @@ namespace TiendaHogarDesktop.Views
             {
                 MessageBox.Show($"Error cargando localidades: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            try
+            {
+                // Cargar enum correcto
+                comboIva.DataSource = Enum.GetValues(typeof(CondicionIvaEnum));
+                comboIva.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error cargando localidades: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private async Task CargarGrilla(string? filtro = null)
@@ -47,19 +59,16 @@ namespace TiendaHogarDesktop.Views
             try
             {
                 var proveedores = await proveedorService.GetAllAsync(filtro);
+                // Enlazar directamente entidades Proveedor
                 ListProveedores.DataSource = proveedores;
-                OcultarColumnasNavegacion();
+                dataGridProveedoresView.OcultarId();
+                // Ocultar navegación compleja si existe
+                dataGridProveedoresView.OcultarColumnas(new[] { "LocalidadId" });
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error cargando proveedores: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void OcultarColumnasNavegacion()
-        {
-            if (dataGridProveedoresView.Columns.Contains("Localidad"))
-                dataGridProveedoresView.Columns["Localidad"].Visible = false;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -80,6 +89,7 @@ namespace TiendaHogarDesktop.Views
                     proveedorCurrent.Direccion = txtDireccion.Text;
                     proveedorCurrent.Telefonos = txtTelefonos.Text;
                     proveedorCurrent.Cuit = txtCbu.Text; // usar CUIT
+                    proveedorCurrent.CondicionIva = (CondicionIvaEnum)comboIva.SelectedItem!;
                     proveedorCurrent.LocalidadId = (int)comboLocalidades.SelectedValue!;
                     await proveedorService.UpdateAsync(proveedorCurrent);
                     proveedorCurrent = null;
@@ -92,6 +102,7 @@ namespace TiendaHogarDesktop.Views
                         Direccion = txtDireccion.Text,
                         Telefonos = txtTelefonos.Text,
                         Cuit = txtCbu.Text,
+                        CondicionIva = (CondicionIvaEnum)comboIva.SelectedItem!,
                         LocalidadId = (int)comboLocalidades.SelectedValue!
                     };
                     await proveedorService.AddAsync(proveedor);
@@ -115,7 +126,7 @@ namespace TiendaHogarDesktop.Views
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            proveedorCurrent = (Proveedor?)ListProveedores.Current;
+            proveedorCurrent = ListProveedores.Current as Proveedor;
             if (proveedorCurrent == null)
             {
                 MessageBox.Show("Seleccione un proveedor", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -125,13 +136,14 @@ namespace TiendaHogarDesktop.Views
             txtDireccion.Text = proveedorCurrent.Direccion;
             txtTelefonos.Text = proveedorCurrent.Telefonos;
             txtCbu.Text = proveedorCurrent.Cuit;
+            comboIva.SelectedItem = proveedorCurrent.CondicionIva;
             comboLocalidades.SelectedValue = proveedorCurrent.LocalidadId ?? -1;
             tabControl1.SelectTab(tabPageEditarAgregar);
         }
 
         private async void btnEliminar_Click(object sender, EventArgs e)
         {
-            proveedorCurrent = (Proveedor?)ListProveedores.Current;
+            proveedorCurrent = ListProveedores.Current as Proveedor;
             if (proveedorCurrent == null)
             {
                 MessageBox.Show("Debe seleccionar un proveedor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -181,8 +193,14 @@ namespace TiendaHogarDesktop.Views
             txtDireccion.Text = string.Empty;
             txtTelefonos.Text = string.Empty;
             txtCbu.Text = string.Empty;
+            comboIva.SelectedIndex = -1;
             comboLocalidades.SelectedIndex = -1;
             errorProvider.Clear();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

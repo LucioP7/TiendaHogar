@@ -1,6 +1,7 @@
 ﻿using Service.Interfaces;
 using Service.Models;
 using Service.Services;
+using TiendaHogarDesktop.ExtensionMethods;
 
 namespace TiendaHogarDesktop.Views
 {
@@ -46,9 +47,11 @@ namespace TiendaHogarDesktop.Views
             try
             {
                 var clientes = await clienteService.GetAllAsync(filtro);
+                // Enlazar directamente entidades Cliente
                 ListClientes.DataSource = clientes;
-                if (dataGridClientesView.Columns.Contains("Localidad"))
-                    dataGridClientesView.Columns["Localidad"].Visible = false;
+
+                // Ocultar columnas no deseadas y relaciones complejas
+                dataGridClientesView.OcultarColumnas(new[] { "Id", "LocalidadId" });
             }
             catch (Exception ex)
             {
@@ -75,6 +78,7 @@ namespace TiendaHogarDesktop.Views
                     clienteCurrent.Telefono = txtTelefonos.Text;
                     clienteCurrent.LocalidadId = (int)comboLocalidades.SelectedValue!;
                     clienteCurrent.Email = txtEmail.Text;
+                    clienteCurrent.Dni = txtDni.Text;
                     await clienteService.UpdateAsync(clienteCurrent);
                     clienteCurrent = null;
                 }
@@ -86,7 +90,8 @@ namespace TiendaHogarDesktop.Views
                         Direccion = txtDireccion.Text,
                         Telefono = txtTelefonos.Text,
                         LocalidadId = (int)comboLocalidades.SelectedValue!,
-                        Email = txtEmail.Text
+                        Email = txtEmail.Text,
+                        Dni = txtDni.Text
                     };
                     await clienteService.AddAsync(cliente);
                 }
@@ -109,7 +114,7 @@ namespace TiendaHogarDesktop.Views
 
         private void iconButtonEditar_Click(object sender, EventArgs e)
         {
-            clienteCurrent = (Cliente?)ListClientes.Current;
+            clienteCurrent = ListClientes.Current as Cliente;
             if (clienteCurrent == null)
             {
                 MessageBox.Show("Seleccione un cliente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -120,12 +125,13 @@ namespace TiendaHogarDesktop.Views
             txtTelefonos.Text = clienteCurrent.Telefono;
             comboLocalidades.SelectedValue = clienteCurrent.LocalidadId;
             txtEmail.Text = clienteCurrent.Email;
+            txtDni.Text = clienteCurrent.Dni;
             tabControl.SelectTab(tabPageAgregarEditar);
         }
 
         private async void iconButtonEliminar_Click(object sender, EventArgs e)
         {
-            clienteCurrent = (Cliente?)ListClientes.Current;
+            clienteCurrent = ListClientes.Current as Cliente;
             if (clienteCurrent == null)
             {
                 MessageBox.Show("Debe seleccionar un cliente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -163,6 +169,11 @@ namespace TiendaHogarDesktop.Views
                 errorProvider.SetError(comboLocalidades, "Seleccione una localidad");
                 ok = false;
             }
+            if (string.IsNullOrWhiteSpace(txtDni.Text))
+            {
+                errorProvider.SetError(txtDni, "DNI obligatorio");
+                ok = false;
+            }
             return ok;
         }
 
@@ -172,12 +183,19 @@ namespace TiendaHogarDesktop.Views
             txtDireccion.Text = string.Empty;
             txtTelefonos.Text = string.Empty;
             comboLocalidades.SelectedIndex = -1;
+            txtEmail.Text = string.Empty;
+            txtDni.Text = string.Empty;
             errorProvider.Clear();
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -34,6 +34,7 @@
             label1 = new Label();
             tabControl = new TabControl();
             tabPageLista = new TabPage();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             iconButtonEliminar = new FontAwesome.Sharp.IconButton();
             iconButtonEditar = new FontAwesome.Sharp.IconButton();
             iconButtonAgregar = new FontAwesome.Sharp.IconButton();
@@ -54,6 +55,8 @@
             btnGuardar = new FontAwesome.Sharp.IconButton();
             txtNombre = new TextBox();
             label2 = new Label();
+            txtDni = new TextBox();
+            labelDni = new Label();
             clienteBindingSource = new BindingSource(components);
             panel1.SuspendLayout();
             tabControl.SuspendLayout();
@@ -100,6 +103,7 @@
             // 
             // tabPageLista
             // 
+            tabPageLista.Controls.Add(iconButton1);
             tabPageLista.Controls.Add(iconButtonEliminar);
             tabPageLista.Controls.Add(iconButtonEditar);
             tabPageLista.Controls.Add(iconButtonAgregar);
@@ -114,6 +118,24 @@
             tabPageLista.TabIndex = 0;
             tabPageLista.Text = "Lista";
             tabPageLista.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            iconButton1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconButton1.BackColor = Color.OrangeRed;
+            iconButton1.ForeColor = Color.White;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.X;
+            iconButton1.IconColor = Color.White;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 28;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(760, 284);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(125, 47);
+            iconButton1.TabIndex = 8;
+            iconButton1.Text = "Salir";
+            iconButton1.UseVisualStyleBackColor = false;
+            iconButton1.Click += iconButton1_Click;
             // 
             // iconButtonEliminar
             // 
@@ -247,6 +269,8 @@
             tabPageAgregarEditar.Controls.Add(btnGuardar);
             tabPageAgregarEditar.Controls.Add(txtNombre);
             tabPageAgregarEditar.Controls.Add(label2);
+            tabPageAgregarEditar.Controls.Add(txtDni);
+            tabPageAgregarEditar.Controls.Add(labelDni);
             tabPageAgregarEditar.Location = new Point(4, 24);
             tabPageAgregarEditar.Margin = new Padding(2);
             tabPageAgregarEditar.Name = "tabPageAgregarEditar";
@@ -335,7 +359,7 @@
             btnCancelar.IconColor = Color.Black;
             btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCancelar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCancelar.Location = new Point(514, 275);
+            btnCancelar.Location = new Point(514, 315);
             btnCancelar.Margin = new Padding(2);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(100, 48);
@@ -351,7 +375,7 @@
             btnGuardar.IconColor = Color.Black;
             btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnGuardar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnGuardar.Location = new Point(277, 275);
+            btnGuardar.Location = new Point(277, 315);
             btnGuardar.Margin = new Padding(2);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(100, 48);
@@ -379,6 +403,24 @@
             label2.TabIndex = 11;
             label2.Text = "Nombre:";
             // 
+            // txtDni
+            // 
+            txtDni.Location = new Point(386, 226);
+            txtDni.Margin = new Padding(2);
+            txtDni.Name = "txtDni";
+            txtDni.Size = new Size(197, 23);
+            txtDni.TabIndex = 14;
+            // 
+            // labelDni
+            // 
+            labelDni.AutoSize = true;
+            labelDni.Location = new Point(277, 230);
+            labelDni.Margin = new Padding(2, 0, 2, 0);
+            labelDni.Name = "labelDni";
+            labelDni.Size = new Size(30, 15);
+            labelDni.TabIndex = 13;
+            labelDni.Text = "DNI:";
+            // 
             // clienteBindingSource
             // 
             clienteBindingSource.DataSource = typeof(Service.Models.Cliente);
@@ -388,6 +430,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(901, 449);
+            ControlBox = false;
             Controls.Add(tabControl);
             Controls.Add(panel1);
             Margin = new Padding(2);
@@ -432,5 +475,8 @@
         private Label label7;
         private BindingSource clienteBindingSource;
         private TextBox txtEmail;
+        private TextBox txtDni;
+        private Label labelDni;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

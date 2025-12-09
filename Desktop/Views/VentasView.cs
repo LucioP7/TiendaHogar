@@ -1,7 +1,8 @@
-﻿using TiendaHogarDesktop.ExtensionMethods;
-using Service.Enums;
+﻿using Service.Enums;
 using Service.Models;
 using Service.Services;
+using TiendaHogarDesktop.ExtensionMethods;
+using TiendaHogarDesktop.ViewReports; // added for invoice report
 
 namespace TiendaHogarDesktop.Views
 {
@@ -10,8 +11,10 @@ namespace TiendaHogarDesktop.Views
         private readonly GenericService<Cliente> clienteService = new();
         private readonly GenericService<Producto> productoService = new();
         private readonly GenericService<Venta> ventaService = new();
+
         private Venta venta = new();
         private readonly ErrorProvider errorProvider = new();
+        private const decimal IVA_RATE = 0.21m;
 
         public VentasView()
         {
@@ -40,8 +43,16 @@ namespace TiendaHogarDesktop.Views
                 comboBoxFormasDePago.DataSource = Enum.GetValues(typeof(FormaDePagoEnum));
                 numericPrecio.Value = 0;
                 numericCantidad.Value = 1;
-                gridDetallesVenta.DataSource = venta.DetallesVenta.ToList();
+                gridDetallesVenta.DataSource = venta.DetallesVenta.Select(d => new
+                {
+                    d.Id,
+                    ProductoNombre = d.Producto?.Nombre,
+                    d.Cantidad,
+                    PrecioUnitario = d.PrecioUnitario,
+                    Total = (d.Cantidad * d.PrecioUnitario) * (1 + IVA_RATE)
+                }).ToList();
                 EstilizarGrilla();
+                gridDetallesVenta.OcultarId();
             }
             catch (Exception ex)
             {
@@ -69,7 +80,12 @@ namespace TiendaHogarDesktop.Views
         private void numericCantidad_ValueChanged(object sender, EventArgs e) => CalcularSubtotal();
         private void numericPrecio_ValueChanged(object sender, EventArgs e) => CalcularSubtotal();
 
-        private void CalcularSubtotal() => numericSubtotal.Value = numericPrecio.Value * numericCantidad.Value;
+        private void CalcularSubtotal()
+        {
+            var neto = numericPrecio.Value * numericCantidad.Value;
+            var iva = neto * IVA_RATE;
+            numericSubtotal.Value = neto + iva; // mostrar subtotal con IVA
+        }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
@@ -91,15 +107,27 @@ namespace TiendaHogarDesktop.Views
         private void ActualizarDetalles()
         {
             gridDetallesVenta.DataSource = null;
-            gridDetallesVenta.DataSource = venta.DetallesVenta.ToList();
+            gridDetallesVenta.DataSource = venta.DetallesVenta.Select(d => new
+            {
+                d.Id,
+                ProductoNombre = d.Producto?.Nombre,
+                d.Cantidad,
+                PrecioUnitario = d.PrecioUnitario,
+                Total = (d.Cantidad * d.PrecioUnitario) * (1 + IVA_RATE)
+            }).ToList();
+            gridDetallesVenta.OcultarId();
         }
 
-        private void ActualizarTotalFactura() => numericTotal.Value = venta.DetallesVenta.Sum(dv => dv.Cantidad * dv.PrecioUnitario);
+        private void ActualizarTotalFactura()
+        {
+            var neto = venta.DetallesVenta.Sum(dv => dv.Cantidad * dv.PrecioUnitario);
+            var iva = neto * IVA_RATE;
+            numericTotal.Value = neto + iva; // total con IVA
+        }
 
         private void gridDetallesVenta_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            gridDetallesVenta.OcultarColumnas(new[] { "Id", "Venta", "VentaId", "ProductoId", "Eliminado" });
-            BtnQuitar.Enabled = gridDetallesVenta.Rows.Count > 0;
+            gridDetallesVenta.OcultarId();
         }
 
         private void BtnQuitar_Click(object sender, EventArgs e)
@@ -123,13 +151,27 @@ namespace TiendaHogarDesktop.Views
                 venta.ClienteId = (int)comboBoxClientes.SelectedValue!;
                 venta.FormaPago = (FormaDePagoEnum)comboBoxFormasDePago.SelectedValue!;
                 venta.Fecha = DateTime.Now;
-                venta.Total = numericTotal.Value;
-                venta.Iva = venta.Total * 0.21m;
+
+                var neto = venta.DetallesVenta.Sum(dv => dv.Cantidad * dv.PrecioUnitario);
+                var iva = neto * IVA_RATE;
+                var totalConIva = neto + iva;
+
+                venta.Total = totalConIva;
+                venta.Iva = iva;
+
                 venta.Cliente = null;
-                foreach (var dv in venta.DetallesVenta) dv.Producto = null; // reemplazo ForEach
-                foreach (var dv in venta.DetallesVenta) dv.Venta = null; // reemplazo ForEach
-                await ventaService.AddAsync(venta);
+                foreach (var dv in venta.DetallesVenta) dv.Producto = null;
+                foreach (var dv in venta.DetallesVenta) dv.Venta = null;
+
+                var savedVenta = await ventaService.AddAsync(venta); // capture saved sale
                 MessageBox.Show("Venta registrada correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (savedVenta != null && savedVenta.Id > 0)
+                {
+                    var factura = new FacturaViewReport(savedVenta.Id);
+                    factura.ShowDialog(this);
+                }
+
                 venta = new Venta();
                 ActualizarDetalles();
                 ActualizarTotalFactura();
@@ -155,6 +197,16 @@ namespace TiendaHogarDesktop.Views
                 ok = false;
             }
             return ok;
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

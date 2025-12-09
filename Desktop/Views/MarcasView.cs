@@ -1,6 +1,7 @@
 using Service.Models;
 using Service.Services;
 using Service.Interfaces;
+using TiendaHogarDesktop.ExtensionMethods;
 
 namespace TiendaHogarDesktop.Views
 {
@@ -23,9 +24,10 @@ namespace TiendaHogarDesktop.Views
         {
             try
             {
-                listaMarcas.DataSource = await marcaService.GetAllAsync(filtro);
-                if (dataGridMarcas.Columns.Contains("Eliminado"))
-                    dataGridMarcas.Columns["Eliminado"].Visible = false;
+                var marcas = await marcaService.GetAllAsync(filtro);
+                // Enlazar directamente a entidades para permitir Current como Marca
+                listaMarcas.DataSource = marcas;
+                dataGridMarcas.OcultarId();
             }
             catch (Exception ex)
             {
@@ -38,15 +40,16 @@ namespace TiendaHogarDesktop.Views
         }
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            marcaCurrent = (Marca?)listaMarcas.Current;
-            if (marcaCurrent == null) { MessageBox.Show("Seleccione una marca", "Atención"); return; }
+            // Con entidades enlazadas, Current es Marca
+            marcaCurrent = listaMarcas.Current as Marca;
+            if (marcaCurrent == null) { MessageBox.Show("Seleccione una marca", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             txtNombre.Text = marcaCurrent.Nombre;
             tabControl.SelectTab(tabPageEditarAgregar);
         }
         private async void btnEliminar_Click(object sender, EventArgs e)
         {
-            marcaCurrent = (Marca?)listaMarcas.Current;
-            if (marcaCurrent == null) { MessageBox.Show("Seleccione una marca", "Atención"); return; }
+            marcaCurrent = listaMarcas.Current as Marca;
+            if (marcaCurrent == null) { MessageBox.Show("Seleccione una marca", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             if (MessageBox.Show($"¿Eliminar marca {marcaCurrent.Nombre}?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try { await marcaService.DeleteAsync(marcaCurrent.Id); await CargarGrilla(); }
@@ -83,5 +86,10 @@ namespace TiendaHogarDesktop.Views
         private bool Validar()
         { errorProvider.Clear(); if (string.IsNullOrWhiteSpace(txtNombre.Text)) { errorProvider.SetError(txtNombre, "Nombre obligatorio"); return false; } return true; }
         private void Limpiar() { txtNombre.Text = string.Empty; errorProvider.Clear(); }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

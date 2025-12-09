@@ -1,6 +1,7 @@
 using Service.Models;
 using Service.Services;
 using Service.Interfaces;
+using TiendaHogarDesktop.ExtensionMethods;
 
 namespace TiendaHogarDesktop.Views
 {
@@ -23,9 +24,10 @@ namespace TiendaHogarDesktop.Views
         {
             try
             {
-                listaCategorias.DataSource = await categoriaService.GetAllAsync(filtro);
-                if (dataGridCategorias.Columns.Contains("Eliminado"))
-                    dataGridCategorias.Columns["Eliminado"].Visible = false;
+                var categorias = await categoriaService.GetAllAsync(filtro);
+                // Enlazar directamente entidades
+                listaCategorias.DataSource = categorias;
+                dataGridCategorias.OcultarId();
             }
             catch (Exception ex)
             {
@@ -40,16 +42,16 @@ namespace TiendaHogarDesktop.Views
         }
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            categoriaCurrent = (Categoria?)listaCategorias.Current;
-            if (categoriaCurrent == null) { MessageBox.Show("Seleccione una categoría", "Atención"); return; }
+            categoriaCurrent = listaCategorias.Current as Categoria;
+            if (categoriaCurrent == null) { MessageBox.Show("Seleccione una categoría", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             txtNombre.Text = categoriaCurrent.Nombre;
             txtDescripcion.Text = categoriaCurrent.Descripcion;
             tabControl.SelectTab(tabPageEditarAgregar);
         }
         private async void btnEliminar_Click(object sender, EventArgs e)
         {
-            categoriaCurrent = (Categoria?)listaCategorias.Current;
-            if (categoriaCurrent == null) { MessageBox.Show("Seleccione una categoría", "Atención"); return; }
+            categoriaCurrent = listaCategorias.Current as Categoria;
+            if (categoriaCurrent == null) { MessageBox.Show("Seleccione una categoría", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             if (MessageBox.Show($"¿Eliminar categoría {categoriaCurrent.Nombre}?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try
@@ -100,5 +102,10 @@ namespace TiendaHogarDesktop.Views
             txtNombre.Text = string.Empty; txtDescripcion.Text = string.Empty; errorProvider.Clear();
         }
         private async void txtFiltro_TextChanged(object sender, EventArgs e) => await CargarGrilla(txtFiltro.Text);
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

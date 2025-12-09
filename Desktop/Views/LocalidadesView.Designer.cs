@@ -32,7 +32,7 @@
             label1 = new Label();
             tabControl = new TabControl();
             tabPageLista = new TabPage();
-            iconButtonSalir = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             BtnBuscar = new FontAwesome.Sharp.IconButton();
             label3 = new Label();
             txtFiltro = new TextBox();
@@ -88,7 +88,7 @@
             // 
             // tabPageLista
             // 
-            tabPageLista.Controls.Add(iconButtonSalir);
+            tabPageLista.Controls.Add(iconButton1);
             tabPageLista.Controls.Add(BtnBuscar);
             tabPageLista.Controls.Add(label3);
             tabPageLista.Controls.Add(txtFiltro);
@@ -104,24 +104,23 @@
             tabPageLista.Text = "Lista";
             tabPageLista.UseVisualStyleBackColor = true;
             // 
-            // iconButtonSalir
+            // iconButton1
             // 
-            iconButtonSalir.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconButtonSalir.BackColor = Color.Firebrick;
-            iconButtonSalir.ForeColor = Color.White;
-            iconButtonSalir.IconChar = FontAwesome.Sharp.IconChar.Close;
-            iconButtonSalir.IconColor = Color.White;
-            iconButtonSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButtonSalir.IconSize = 28;
-            iconButtonSalir.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButtonSalir.Location = new Point(607, 217);
-            iconButtonSalir.Margin = new Padding(3, 2, 3, 2);
-            iconButtonSalir.Name = "iconButtonSalir";
-            iconButtonSalir.Size = new Size(108, 40);
-            iconButtonSalir.TabIndex = 14;
-            iconButtonSalir.Text = "&Salir";
-            iconButtonSalir.TextAlign = ContentAlignment.MiddleRight;
-            iconButtonSalir.UseVisualStyleBackColor = false;
+            iconButton1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconButton1.BackColor = Color.OrangeRed;
+            iconButton1.ForeColor = Color.White;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.X;
+            iconButton1.IconColor = Color.White;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 28;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(609, 217);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(105, 33);
+            iconButton1.TabIndex = 16;
+            iconButton1.Text = "Salir";
+            iconButton1.UseVisualStyleBackColor = false;
+            iconButton1.Click += iconButton1_Click;
             // 
             // BtnBuscar
             // 
@@ -306,6 +305,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(727, 421);
+            ControlBox = false;
             Controls.Add(tabControl);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
@@ -337,9 +337,9 @@
         private FontAwesome.Sharp.IconButton btnAgregar;
         private FontAwesome.Sharp.IconButton btnModificar;
         private FontAwesome.Sharp.IconButton btnEliminar;
-        private FontAwesome.Sharp.IconButton iconButtonSalir;
         private FontAwesome.Sharp.IconButton BtnBuscar;
         private Label label3;
         private TextBox txtFiltro;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

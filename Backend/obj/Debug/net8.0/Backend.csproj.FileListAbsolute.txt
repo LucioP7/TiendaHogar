@@ -240,3 +240,4 @@ C:\Users\alera\source\repos\TiendaHogar\Backend\obj\Debug\net8.0\refint\Backend.
 C:\Users\alera\source\repos\TiendaHogar\Backend\obj\Debug\net8.0\Backend.pdb
 C:\Users\alera\source\repos\TiendaHogar\Backend\obj\Debug\net8.0\Backend.genruntimeconfig.cache
 C:\Users\alera\source\repos\TiendaHogar\Backend\obj\Debug\net8.0\ref\Backend.dll
+C:\Users\alera\source\repos\TiendaHogar\Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

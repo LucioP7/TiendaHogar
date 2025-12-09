@@ -1,6 +1,7 @@
 ﻿using Service.Interfaces;
 using Service.Models;
 using Service.Services;
+using TiendaHogarDesktop.ExtensionMethods;
 
 namespace TiendaHogarDesktop.Views
 {
@@ -25,7 +26,10 @@ namespace TiendaHogarDesktop.Views
         {
             try
             {
-                listaLocalidades.DataSource = await localidadService.GetAllAsync(filtro);
+                var localidades = await localidadService.GetAllAsync(filtro);
+                // Bind directly to entities coming from the database
+                listaLocalidades.DataSource = localidades;
+                dataGridLocalidades.OcultarId();
             }
             catch (Exception ex)
             {
@@ -68,7 +72,8 @@ namespace TiendaHogarDesktop.Views
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            localidadCurrent = (Localidad?)listaLocalidades.Current;
+            // With entities bound, Current is a Localidad
+            localidadCurrent = listaLocalidades.Current as Localidad;
             if (localidadCurrent == null)
             {
                 MessageBox.Show("Seleccione una localidad", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -80,7 +85,7 @@ namespace TiendaHogarDesktop.Views
 
         private async void btnEliminar_Click(object sender, EventArgs e)
         {
-            localidadCurrent = (Localidad?)listaLocalidades.Current;
+            localidadCurrent = listaLocalidades.Current as Localidad;
             if (localidadCurrent == null)
             {
                 MessageBox.Show("Seleccione una localidad", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -135,6 +140,11 @@ namespace TiendaHogarDesktop.Views
         private async void txtFiltro_TextChanged(object sender, EventArgs e)
         {
             await CargarGrilla(txtFiltro.Text);
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

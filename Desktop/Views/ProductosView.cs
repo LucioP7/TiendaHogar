@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TiendaHogarDesktop.ExtensionMethods;
 
 namespace TiendaHogarDesktop.Views
 {
@@ -20,7 +21,6 @@ namespace TiendaHogarDesktop.Views
         private readonly IGenericService<Marca> marcaService = new GenericService<Marca>();
         private readonly IGenericService<Proveedor> proveedorService = new GenericService<Proveedor>();
         private readonly BindingSource ListProductos = new();
-        private List<Producto> ListaAFiltrar = new();
         private Producto? productoCurrent;
         private readonly ErrorProvider errorProvider = new();
 
@@ -61,13 +61,16 @@ namespace TiendaHogarDesktop.Views
             }
         }
 
-        private async Task CargarGrilla()
+        private async Task CargarGrilla(string? filtro = null)
         {
             try
             {
-                var productos = await productoService.GetAllAsync(null);
+                var productos = await productoService.GetAllAsync(filtro);
+                // Enlazar directamente entidades Producto
                 ListProductos.DataSource = productos;
-                ListaAFiltrar = productos ?? new List<Producto>();
+
+                // Ocultar columnas no deseadas y relaciones complejas
+                dataGridProductosView.OcultarColumnas(new[] { "Id", "CategoriaId", "MarcaId", "ProveedorId" });
             }
             catch (Exception ex)
             {
@@ -84,7 +87,7 @@ namespace TiendaHogarDesktop.Views
 
         private void iconButtonEditar_Click(object sender, EventArgs e)
         {
-            productoCurrent = (Producto?)ListProductos.Current;
+            productoCurrent = ListProductos.Current as Producto;
             if (productoCurrent == null)
             {
                 MessageBox.Show("Seleccione un producto", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -170,19 +173,15 @@ namespace TiendaHogarDesktop.Views
             }
         }
 
-        private void BtnBuscar_Click(object sender, EventArgs e)
+        private async void BtnBuscar_Click(object sender, EventArgs e)
         {
-            FiltrarProductos();
+            await CargarGrilla(txtFiltro.Text);
         }
 
-        private void FiltrarProductos()
+        private async void txtFiltro_TextChanged(object sender, EventArgs e)
         {
-            var texto = txtFiltro.Text.Trim().ToUpperInvariant();
-            var productosFiltrados = ListaAFiltrar.Where(p => p.Nombre?.ToUpperInvariant().Contains(texto) == true).ToList();
-            ListProductos.DataSource = productosFiltrados;
+            await CargarGrilla(txtFiltro.Text);
         }
-
-        private void txtFiltro_TextChanged(object sender, EventArgs e) => FiltrarProductos();
 
         private bool ValidarCampos()
         {
@@ -207,6 +206,11 @@ namespace TiendaHogarDesktop.Views
             comboMarcas.SelectedIndex = -1;
             comboProveedores.SelectedIndex = -1;
             errorProvider.Clear();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

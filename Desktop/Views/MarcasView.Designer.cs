@@ -9,6 +9,7 @@ namespace TiendaHogarDesktop.Views
         {
             tabControl = new TabControl();
             tabPageLista = new TabPage();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             btnEliminar = new FontAwesome.Sharp.IconButton();
             btnEditar = new FontAwesome.Sharp.IconButton();
             btnAgregar = new FontAwesome.Sharp.IconButton();
@@ -40,6 +41,7 @@ namespace TiendaHogarDesktop.Views
             // 
             // tabPageLista
             // 
+            tabPageLista.Controls.Add(iconButton1);
             tabPageLista.Controls.Add(btnEliminar);
             tabPageLista.Controls.Add(btnEditar);
             tabPageLista.Controls.Add(btnAgregar);
@@ -53,6 +55,24 @@ namespace TiendaHogarDesktop.Views
             tabPageLista.TabIndex = 0;
             tabPageLista.Text = "Lista";
             tabPageLista.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            iconButton1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconButton1.BackColor = Color.OrangeRed;
+            iconButton1.ForeColor = Color.White;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.X;
+            iconButton1.IconColor = Color.White;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 28;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(584, 341);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(140, 58);
+            iconButton1.TabIndex = 9;
+            iconButton1.Text = "Salir";
+            iconButton1.UseVisualStyleBackColor = false;
+            iconButton1.Click += iconButton1_Click;
             // 
             // btnEliminar
             // 
@@ -213,6 +233,7 @@ namespace TiendaHogarDesktop.Views
             // MarcasView
             // 
             ClientSize = new Size(740, 500);
+            ControlBox = false;
             Controls.Add(tabControl);
             Name = "MarcasView";
             StartPosition = FormStartPosition.CenterParent;
@@ -239,5 +260,6 @@ namespace TiendaHogarDesktop.Views
         private FontAwesome.Sharp.IconButton btnGuardar;
         private TextBox txtNombre;
         private Label label2;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

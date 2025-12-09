@@ -14,5 +14,9 @@ namespace Service.Models
         public string Nombre { get; set; } = string.Empty;
         public string Descripcion { get; set; } = string.Empty;
         public bool Eliminado { get; set; } = false;
+        public override string ToString()
+        {
+            return Nombre;
+        }
     }
 }

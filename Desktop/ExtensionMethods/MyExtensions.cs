@@ -94,7 +94,26 @@ namespace TiendaHogarDesktop.ExtensionMethods
             return Application.OpenForms.OfType<Form>().Any(f => f.Name == form.Name);
         }
 
+        // Nuevas utilidades para aplicar en todas las views
+        public static void OcultarId(this DataGridView grid)
+        {
+            grid.OcultarColumnas(new[] { "Id" });
+        }
 
-
+        public static void MostrarRelacionNombre(this DataGridView grid, string columnaRelacion, string columnaNombreMostrada)
+        {
+            // Si existe la columna de relación (objeto), ocúltala y asegúrate de que la proyección incluya el nombre
+            foreach (DataGridViewColumn columna in grid.Columns)
+            {
+                if (columna.Name == columnaRelacion)
+                {
+                    columna.Visible = false;
+                }
+                if (columna.Name == columnaNombreMostrada)
+                {
+                    columna.Visible = true;
+                }
+            }
+        }
     }
 }
